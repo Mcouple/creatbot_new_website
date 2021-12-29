@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/Initialize.css">
+    <link rel="stylesheet" href="./css/container.css">
+    <link rel="stylesheet" href="./css/container-second.css">
+    <link rel="stylesheet" href="./css/container-third.css">
+    <link rel="stylesheet" href="./css/download.css">
+    
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div id="nav" class="alltime">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="#"><span><img src="./imges/logo.png" alt=""></span></a>
+                <ul class="nav-list">
+                    <li class="nav-list-li" v-for="item in list"><a class="white" href="#">{{item}}</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="nav-right-search nav-now"><img src="./imges/search.png" alt="#"></div>
+                <div class="nav-right-lang">
+                    <a href="#"><span class="white">中文</span> </a>
+                    <span class="nav-right-en white">/</span>
+                    <a href="https://www.creatbot.com/en/" target="_blank">
+                        <span class="white">EN</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 视频区域 -->
+    <div class="bottom">
+        <div class="bg-video">
+            <video muted="muted" autoplay="autoplay" loop="loop"   class="big-video" playbackRate="0.5">
+                <source type="video/mp4" src="./video/update.mp4">
+            </video> 
+        </div>
+        <!-- 角标 -->
+        <!-- <div class="slide_tips">
+            <img src="./imges/slide.png" alt=""> 
+            <span class="txt">滑动</span>
+        </div> -->
+    </div>
+
+    <!-- 主体部分-f1000 -->
+    <div id="container">
+        <!-- f1000 -->
+        <div class="container-main">
+            <div class="top">
+                <span>超大尺寸 工业级打印机</span><h6>CreatBot F1000 </h6>
+            </div>
+            <div class="container-bottom">
+                <div class="First-F1000">
+                    <img src="./imges/f1000/1F1000.jpg" alt="">
+                    <span>超大尺寸工业级 3D打印机</span>
+                </div>
+                <div class="next F1000">
+                    <img src="./imges/f1000/d1000_feature_02.png" alt="">
+                    <span>自动升降喷头温度高达 420 ℃</span>
+                    <div class="container-bottom-desktop next-container-bottom-desktop">
+                        <div class="descript-text">
+                            <div class="descript-title">
+                                智选科技 | 创意无界 CR-6 Max 3D打印机
+                            </div>
+                             <div class="descript-descript">
+                                 CR-6 Max可实现400*400*400mm的打印尺寸拓宽创意边界, 有效降低打印过程中的噪音，无惧办公受扰。
+                            </div>
+                        </div> 
+                            <div class="btn">了解更多</div>
+                    </div>
+                </div>
+                <div class="next F1000">
+                    <img src="./imges/f1000/d1000_feature_06.png" alt="">
+                    <span>高精度直线滑轨结构</span>
+                    <div class="container-bottom-desktop next-container-bottom-desktop">
+                        <div class="descript-text">
+                            <div class="descript-title">
+                                智选科技 | 创意无界 CR-6 Max 3D打印机
+                            </div>
+                             <div class="descript-descript">
+                                 CR-6 Max可实现400*400*400mm的打印尺寸拓宽创意边界, 有效降低打印过程中的噪音，无惧办公受扰。
+                            </div>
+                        </div> 
+                            <div class="btn">了解更多</div>
+                    </div>
+                </div>
+                <div class="F1000">
+                    <img src="./imges/f1000/d1000_feature_03.png" alt="">
+                    <span>超高精度</span>
+                    <div class="container-bottom-desktop">
+                        <div class="descript-text">
+                            <div class="descript-title">
+                                智选科技 | 创意无界 CR-6 Max 3D打印机
+                            </div>
+                             <div class="descript-descript">
+                                 CR-6 Max可实现400*400*400mm的打印尺寸拓宽创意边界, 有效降低打印过程中的噪音，无惧办公受扰。
+                            </div>
+                        </div> 
+                            <div class="btn">了解更多</div>
+                    </div>
+                </div>
+                <div class="F1000">
+                    <img style="width: 220px;height: 290px;" class="normal" src="./imges/f1000/d1000_feature_09_zh.jpg" alt="">
+                    <span>摄像头控制技术</span>
+                    <div class="container-bottom-desktop">
+                        <div class="descript-text">
+                            <div class="descript-title">
+                                智选科技 | 创意无界 CR-6 Max 3D打印机
+                            </div>
+                             <div class="descript-descript">
+                                 CR-6 Max可实现400*400*400mm的打印尺寸拓宽创意边界, 有效降低打印过程中的噪音，无惧办公受扰。
+                            </div>
+                        </div> 
+                            <div class="btn">了解更多</div>
+                    </div>
+                </div>
+                <div class="F1000">
+                    <img src="./imges/f1000/d1000_feature_07.jpg" alt="">
+                    <span>全封闭腔体热腔体+耗材烘干舱</span>
+                    <div class="container-bottom-desktop">
+                        <div class="descript-text">
+                            <div class="descript-title">
+                                智选科技 | 创意无界 CR-6 Max 3D打印机
+                            </div>
+                             <div class="descript-descript">
+                                 CR-6 Max可实现400*400*400mm的打印尺寸拓宽创意边界, 有效降低打印过程中的噪音，无惧办公受扰。
+                            </div>
+                        </div> 
+                            <div class="btn">了解更多</div>
+                    </div>
+                </div>
+                <div class="F1000">
+                    <img src="./imges/f1000/d1000_feature_11.jpg" alt="">
+                    <span>全自动调平热床</span>
+                    <div class="container-bottom-desktop">
+                        <div class="descript-text">
+                            <div class="descript-title">
+                                智选科技 | 创意无界 CR-6 Max 3D打印机
+                            </div>
+                             <div class="descript-descript">
+                                 CR-6 Max可实现400*400*400mm的打印尺寸拓宽创意边界, 有效降低打印过程中的噪音，无惧办公受扰。
+                            </div>
+                        </div> 
+                            <div class="btn">了解更多</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 主题第二部分-四种分类 -->
+    <div id="container-second">
+        <div class="container-second-main">
+            <div class="top">
+                <div class="top-container">
+                    <span class="top-title">多款机型<h6>提供全方位的3D打印设备</h6></span>
+                    <a href="#" class="more">了解更多<img class="top-more" src="./imges/more.png" alt="">
+                </div>
+            </div>
+            <div class="container-second-bottom">
+                <a href="#" class="second-bottom-list">
+                    <div class="list-container">
+                        <div class="list-container-left">
+                            <div>
+                                <img src="imges/f160/f11160.png" alt="CreatBot F160">
+                            </div>
+                        </div> 
+                        <div class="list-container-right">
+                            <div class="text">
+                                <div class="text-title">
+                                    CreatBot F160
+                                </div> 
+                                <div class="text-descript">
+                                Sermoon 并能适应更多耗材打印场景。搭载自主研发静音主板，全程超静音打印。
+                                </div>
+                            </div> 
+                            <div class="btn">
+                                了解更多<i class="iconfont iconjiantouyou"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="second-bottom-list">
+                    <div class="list-container">
+                        <div class="list-container-left">
+                            <div>
+                                <img src="imges/f160/DX-DX+.jpg.png" alt="CreatBot F160">
+                            </div>
+                        </div> 
+                        <div class="list-container-right">
+                            <div class="text">
+                                <div class="text-title">
+                                    CreatBot DX/DX Plus
+                                </div> 
+                                <div class="text-descript">
+                                Sermoon 并能适应更多耗材打印场景。搭载自主研发静音主板，全程超静音打印。
+                                </div>
+                            </div> 
+                            <div class="btn">
+                                了解更多<i class="iconfont iconjiantouyou"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="second-bottom-list">
+                    <div class="list-container">
+                        <div class="list-container-left">
+                            <div>
+                                <img src="imges/f160/f430.jpg.png" alt="CreatBot F160">
+                            </div>
+                        </div> 
+                        <div class="list-container-right">
+                            <div class="text">
+                                <div class="text-title">
+                                    CreatBot D600/D600 Pro
+                                </div> 
+                                <div class="text-descript">
+                                Sermoon 并能适应更多耗材打印场景。搭载自主研发静音主板，全程超静音打印。
+                                </div>
+                            </div> 
+                            <div class="btn">
+                                了解更多<i class="iconfont iconjiantouyou"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="second-bottom-list">
+                    <div class="list-container">
+                        <div class="list-container-left">
+                            <div>
+                                <img src="imges/f160/DE-DE+.jpg.png" alt="CreatBot F160">
+                            </div>
+                        </div> 
+                        <div class="list-container-right">
+                            <div class="text">
+                                <div class="text-title">
+                                    CreatBot DE/DE Plus
+                                </div> 
+                                <div class="text-descript">
+                                Sermoon 并能适应更多耗材打印场景。搭载自主研发静音主板，全程超静音打印。
+                                </div>
+                            </div> 
+                            <div class="btn">
+                                了解更多<i class="iconfont iconjiantouyou"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="second-bottom-list">
+                    <div class="list-container">
+                        <div class="list-container-left">
+                            <div class="left-box">
+                                <img style="width: 240px;height: 250px;" src="imges/f160/homePage_f430_2.jpg.png" alt="CreatBot F160">
+                            </div>
+                        </div> 
+                        <div class="list-container-right">
+                            <div class="text">
+                                <div class="text-title">
+                                    CreatBot PEEK-300
+                                </div> 
+                                <div class="text-descript width">
+                                Sermoon 并能适应更多耗材打印场景。搭载自主研发静音主板，全程超静音打印。
+                                </div>
+                            </div> 
+                            <div class="btn">
+                                了解更多<i class="iconfont iconjiantouyou"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="second-bottom-list">
+                    <div class="list-container">
+                        <div class="list-container-left">
+                            <div class="left-box">
+                                <img style="width: 240px;height: 250px;" src="imges/f160/peek-300_feature02.jpg.png" alt="CreatBot F160">
+                            </div>
+                        </div> 
+                        <div class="list-container-right">
+                            <div class="text">
+                                <div class="text-title">
+                                    CreatBot F430
+                                </div> 
+                                <div class="text-descript width">
+                                Sermoon 并能适应更多耗材打印场景。搭载自主研发静音主板，全程超静音打印。
+                                </div>
+                            </div> 
+                            <div class="btn">
+                                了解更多<i class="iconfont iconjiantouyou"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 行业应用 -->
+    <div id="container-third">
+            <div class="container-third-main">
+                <div class="top">
+                    <div class="top-container">
+                        <span class="top-title">行业应用<h6>面向各行业ICT上云业务的解决方案</h6></span>
+                    </div>
+                </div>
+                <div class="container-main">
+                    <div class="third-bottom">
+                        <a class="third-bottom-container" href="#">
+                            <div class="cover-img">
+                                <img class="size" src="./imges/third-bottom/01.png" alt="">
+                                <span class="cover"></span>
+                            </div>
+                            <div class="third-bottom-left">
+                                <i><img class="small-img" src="./imges/third-bottom/011.png" alt=""></i>
+                                <a class="title">灯饰灯具</a>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="third-bottom">
+                        <a class="third-bottom-container" href="#">
+                            <div class="cover-img">
+                                <img class="size" src="./imges/third-bottom/02.png" alt="">
+                                <span class="cover"></span>
+                            </div>
+                            <div class="third-bottom-left">
+                                <i><img class="small-img" src="./imges/third-bottom/022.png" alt=""></i>
+                                <a class="title">动漫手办</a>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="third-bottom">
+                        <a class="third-bottom-container" href="#">
+                            <div class="cover-img">
+                                <img class="size" src="./imges/third-bottom/03.png" alt="">
+                                <span class="cover"></span>
+                            </div>
+                            <div class="third-bottom-left">
+                                <i><img class="small-img" src="./imges/third-bottom/033.png" alt=""></i>
+                                
+                                <a class="title">医疗应用</a>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="third-bottom">
+                        <a class="third-bottom-container" href="#">
+                            <div class="cover-img">
+                                <img class="size" src="./imges/third-bottom/04.png" alt="">
+                                <span class="cover"></span>
+                            </div>
+                            <div class="third-bottom-left">
+                                <i><img class="small-img" src="./imges/third-bottom/044.png" alt=""></i>
+                                
+                                <a class="title">工业制造</a>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="third-bottom">
+                        <a class="third-bottom-container" href="#">
+                            <div class="cover-img">
+                                <img class="size" src="./imges/third-bottom/05.png" alt="">
+                                <span class="cover"></span>
+                            </div>
+                            <div class="third-bottom-left">
+                                <i><img class="small-img" src="./imges/third-bottom/055.png" alt=""></i>
+                                
+                                <a class="title">建筑设计</a>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="third-bottom">
+                        <a class="third-bottom-container" href="#">
+                            <div class="cover-img">
+                                <img class="size" src="./imges/third-bottom/06.png" alt="">
+                                <span class="cover"></span>
+                            </div>
+                            <div class="third-bottom-left">
+                                <i><img class="small-img" src="./imges/third-bottom/066.png" alt=""></i>
+                                
+                                <a class="title">汽车行业</a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+    <!-- 下载中心 -->
+    <div id="download">
+        <div class="download-container">
+            <div class="text"><span class="text-title">下载中心</span></div>
+            
+            <div class="dowload-container-bottom">
+                <a href="#">
+                    <div class="download">
+                        <img src="./imges/download/pdf_icon.png" alt="">
+                        <span class="download-text">用户使用手册</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="download">
+                        <img src="./imges/download/creatware.png" alt="">
+                        <span class="download-text">CreatWare软件包</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="download">
+                        <img src="./imges/download/toolkit.png" alt="">
+                        <span class="download-text">增强配件</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        </div>
+
+    <!-- <script src="./js/sidebar.js"></script> -->
+    <script src="./js/vue.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/containerBottom.js"></script>
+   
+
+</body>
+</html>
+
