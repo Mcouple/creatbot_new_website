@@ -11,4 +11,13 @@ $(document).ready(function() {
             })
         })
     }
+
+    //导航栏加背景颜色
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 200) {
+            $("#container_nav").addClass("f_active")
+        } else {
+            $("#container_nav").removeClass("f_active")
+        }
+    });
 })
