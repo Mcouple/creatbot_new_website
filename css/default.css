@@ -263,6 +263,7 @@ html {
         display: block;
         width: 100%;
         position: relative;
+        /* padding-bottom: 9px; */
         top: 9px;
         border-bottom: 5px solid rgb(29, 140, 198);
     }
@@ -284,7 +285,7 @@ html {
 }
 
 .f_active {
-    background-color: rgb(0 0 0 / 36%);
+    background-color: rgb(0 0 0 / 40%);
 }
 
 .s {
