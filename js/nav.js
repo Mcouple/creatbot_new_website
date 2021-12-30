@@ -3,11 +3,11 @@ $(document).ready(function() {
     let lis = $("#nav").find("li")
     for (let i = 0; i < lis.length; i++) {
         $(lis[i]).mouseenter(function() {
-            $(lis[i]).find("a").first().addClass("nav_active")
+            $(lis[i]).addClass("nav_active")
             $(lis[i]).find("div").show();
 
             $(lis[i]).mouseleave(function() {
-                $(lis[i]).find("a").first().removeClass("nav_active")
+                $(lis[i]).removeClass("nav_active")
                 $(lis[i]).find("div").hide();
             })
         })
@@ -24,12 +24,12 @@ $(document).ready(function() {
         }
     });
 
-    setInterval(() => {
-        if ($(window).scrollTop() > 200) {
-            $('.nav_active').append("<style>.nav_active::after{top:12px}</style>");
-        } else {
-            $('.nav_active').append("<style>.nav_active::after{top:9px}</style>");
-        }
-    }, 1)
+    // setInterval(() => {
+    //     if ($(window).scrollTop() > 200) {
+    //         $('.nav_active').append("<style>.nav_active::after{top:12px}</style>");
+    //     } else {
+    //         $('.nav_active').append("<style>.nav_active::after{top:9px}</style>");
+    //     }
+    // }, 1)
 
 })

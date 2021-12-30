@@ -97,7 +97,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-    width: 9px;
+    width: 12px;
     max-height: 3px;
 }
 
@@ -112,16 +112,15 @@ html {
 /* 滚动条颜色 */
 
 ::-webkit-scrollbar-thumb {
-    background-color: #857f7f;
+    background-color: #b6b2b2;
     border-radius: 5px;
 }
 
 
 /* logo尺寸 */
 
-.navbar-brand img {
-    width: 200px;
-    height: 80px;
+.svg_logo {
+    fill: rgba(255, 255, 255, 0.9);
 }
 
 @media (max-width:570px) {
@@ -131,31 +130,21 @@ html {
     }
 }
 
-.nav-item>a {
-    /***** 一级导航给定高度 *****/
-    line-height: 50px;
-}
-
 
 /* 设置小于1000px折叠的导航栏样式 */
 
-@media (min-width:1000px) {
+@media (min-width:1200px) {
     .nav-item>a {
         /***** 一级导航给定高度 *****/
         padding: 21px 10px;
     }
 }
 
-@media (max-width:1000px) {
+@media (max-width:1200px) {
     .nav-item>a {
         /***** 一级导航给定高度 *****/
-        padding: 0px 10px;
-    }
-}
-
-@media (max-width:1000px) {
-    .nav_t {
-        padding: 0px 10px;
+        /* padding: 21px 10px; */
+        line-height: 25px;
     }
 }
 
@@ -188,7 +177,21 @@ html {
 }
 
 .flex-grow_0 {
-    flex-grow: 0.5
+    flex-grow: 0.2
+}
+
+@media(max-width:1200px) {
+    .flex-grow_0 {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width:1200px) {
+    .flex-grow_0>a {
+        margin-left: 0px !important;
+        line-height: 40px;
+    }
 }
 
 .video_container {
@@ -253,19 +256,32 @@ html {
 
 @media(max-width:1000px) {
     .nav_active::after {
-        display: none;
+        opacity: 0;
     }
 }
 
-@media (min-width:1000px) {
+@media (min-width:1200px) {
     .nav_active::after {
+        opacity: 1 !important;
+    }
+}
+
+@media(min-width:1200px) {
+    .active::after {
         content: "";
         display: block;
         width: 100%;
         position: relative;
-        /* padding-bottom: 9px; */
-        top: 9px;
-        border-bottom: 5px solid rgb(29, 140, 198);
+        top: 10px;
+        height: 4px;
+        background-color: rgb(29, 140, 198);
+        opacity: 0;
+    }
+}
+
+@media(min-width:1200px) {
+    .p_ul>li {
+        padding-bottom: 6px;
     }
 }
 
@@ -275,7 +291,7 @@ html {
 .flod_container {
     width: 100%;
     box-sizing: border-box;
-    top: 91px;
+    top: 86px;
     border-top: 5px solid rgb(217, 217, 217);
     padding: 10px 10px;
 }
@@ -286,8 +302,4 @@ html {
 
 .f_active {
     background-color: rgb(0 0 0 / 40%);
-}
-
-.s {
-    padding: 0 16px 0 24px;
 }
