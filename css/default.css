@@ -286,3 +286,7 @@ html {
 .f_active {
     background-color: rgb(0 0 0 / 36%);
 }
+
+.s_active {
+    padding: 0 16px 0 24px;
+}
