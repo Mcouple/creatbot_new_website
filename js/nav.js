@@ -16,10 +16,10 @@ $(document).ready(function() {
     $(window).scroll(function() {
         if ($(window).scrollTop() > 200) {
             $("#container_nav").addClass("f_active")
-            $(".nav_t").addClass("s_active")
+            $(".nav_t").addClass("s")
         } else {
             $("#container_nav").removeClass("f_active")
-            $(".nav_t").removeClass("s_active")
+            $(".nav_t").removeClass("s")
         }
     });
 })
