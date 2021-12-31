@@ -4,7 +4,6 @@ $(document).ready(function() {
     for (let i = 0; i < lis.length; i++) {
         $(lis[i]).mouseenter(function() {
             $(lis[i]).addClass("nav_active")
-            console.log($(lis[i]).find("div"))
             $(lis[i]).find("div").slideDown(100);
 
             $(lis[i]).mouseleave(function() {
