@@ -147,7 +147,7 @@ html {
     }
 }
 
-@media (max-width:1250px) {
+@media (max-width:1350px) {
     .nav-item>a,
     .navbar-text>a,
     #nav_main>a {
@@ -170,13 +170,7 @@ html {
 }
 
 .flex-grow_0 {
-    flex-grow: 0.2
-}
-
-@media(max-width:1300px) {
-    .flex-grow_0 {
-        flex-grow: 0
-    }
+    flex-grow: 0.15
 }
 
 @media(max-width:1200px) {
