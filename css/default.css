@@ -136,26 +136,20 @@ html {
 @media (min-width:1200px) {
     .nav-item>a {
         /***** 一级导航给定高度 *****/
-        padding: 21px 10px;
+        padding: 30px 10px 20px;
     }
 }
 
 @media (max-width:1200px) {
     .nav-item>a {
         /***** 一级导航给定高度 *****/
-        /* padding: 21px 10px; */
         line-height: 25px;
     }
 }
 
-@media (max-width:750px) {
+@media (max-width:1250px) {
     .nav-item>a,
-    .navbar-text>a {
-        font-size: 14px !important;
-    }
-}
-
-@media(max-width:750px) {
+    .navbar-text>a,
     #nav_main>a {
         font-size: 14px !important;
     }
@@ -164,20 +158,25 @@ html {
 .nav-item>a,
 .navbar-text>a {
     color: rgb(255, 255, 255) !important;
-    font-weight: lighter;
+    font-weight: light;
 }
 
 .navbar-text>a {
     text-decoration: none;
 }
 
-.nav-item>a:hover,
-.navbar-text>a:hover {
+.nav-item>a:hover {
     font-weight: normal;
 }
 
 .flex-grow_0 {
     flex-grow: 0.2
+}
+
+@media(max-width:1300px) {
+    .flex-grow_0 {
+        flex-grow: 0
+    }
 }
 
 @media(max-width:1200px) {
@@ -192,6 +191,21 @@ html {
         margin-left: 0px !important;
         line-height: 40px;
     }
+}
+
+@media(min-width:1200px) {
+    .flex-grow_0>a:nth-child(3) {
+        box-sizing: border-box;
+        border: 2px solid rgb(29, 140, 198);
+        padding: 6px 22px 9px;
+        line-height: 25px;
+        background-color: rgba(29, 140, 198, 1);
+    }
+}
+
+.flex-grow_0>a:nth-child(3):hover {
+    color: rgb(29, 140, 198) !important;
+    background-color: rgba(29, 140, 198, 0);
 }
 
 .video_container {
@@ -273,7 +287,7 @@ html {
         display: block;
         width: 100%;
         position: relative;
-        top: 10px;
+        top: 11px;
         height: 4px;
         background-color: rgb(29, 140, 198);
         opacity: 0;
@@ -292,9 +306,8 @@ html {
 .flod_container {
     width: 100%;
     box-sizing: border-box;
-    top: 86px;
-    border-top: 5px solid rgb(217, 217, 217);
-    padding: 10px 10px;
+    top: 95px;
+    border-top: 4px solid rgb(217, 217, 217);
 }
 
 .flod_ul>li {

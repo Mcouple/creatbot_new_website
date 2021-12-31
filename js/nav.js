@@ -4,11 +4,12 @@ $(document).ready(function() {
     for (let i = 0; i < lis.length; i++) {
         $(lis[i]).mouseenter(function() {
             $(lis[i]).addClass("nav_active")
-            $(lis[i]).find("div").show();
+            console.log($(lis[i]).find("div"))
+            $(lis[i]).find("div").slideDown(100);
 
             $(lis[i]).mouseleave(function() {
                 $(lis[i]).removeClass("nav_active")
-                $(lis[i]).find("div").hide();
+                $(lis[i]).find("div").slideUp(100);
             })
         })
     }
@@ -24,12 +25,6 @@ $(document).ready(function() {
         }
     });
 
-    // setInterval(() => {
-    //     if ($(window).scrollTop() > 200) {
-    //         $('.nav_active').append("<style>.nav_active::after{top:12px}</style>");
-    //     } else {
-    //         $('.nav_active').append("<style>.nav_active::after{top:9px}</style>");
-    //     }
-    // }, 1)
+
 
 })
