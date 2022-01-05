@@ -1,16 +1,18 @@
 $(document).ready(function() {
-
-    let lis = $("#nav").find("li")
-    for (let i = 0; i < lis.length; i++) {
-        $(lis[i]).mouseenter(function() {
-            $(lis[i]).addClass("nav_active")
-            $(lis[i]).find("div").slideDown(100);
-
-            $(lis[i]).mouseleave(function() {
-                $(lis[i]).removeClass("nav_active")
-                $(lis[i]).find("div").slideUp(100);
+    var lis = $("li[id='li_main']"),
+        divs = $("div[id='nav_bar']");
+    for (var i = 0; i < lis.length; i++) {
+        (function(j) {
+            $(lis[j]).mouseenter(function() {
+                $(divs[j]).slideDown(100)
+                $(lis[j]).addClass("nav_active")
+                $(lis[j]).mouseleave(function() {
+                    $(divs[j]).slideUp(100)
+                    $(lis[j]).removeClass("nav_active")
+                })
             })
-        })
+        })(i)
+
     }
 
     //导航栏加背景颜色
@@ -23,7 +25,4 @@ $(document).ready(function() {
             $(".nav_t").removeClass("s")
         }
     });
-
-
-
 })

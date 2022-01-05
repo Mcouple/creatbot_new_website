@@ -263,19 +263,21 @@ html {
 
 /* 导航栏角标 */
 
-@media(max-width:1000px) {
-    .nav_active::after {
+
+/* @media(max-width:1000px) {
+    .nav_active {
         opacity: 0;
     }
 }
 
 @media (min-width:1200px) {
-    .nav_active::after {
+    .nav_active {
         opacity: 1 !important;
     }
-}
+} */
 
-@media(min-width:1200px) {
+
+/* @media(min-width:1200px) {
     .active::after {
         content: "";
         display: block;
@@ -286,11 +288,18 @@ html {
         background-color: rgb(29, 140, 198);
         opacity: 0;
     }
+} */
+
+@media(min-width:1200px) {
+    .nav_active {
+        box-sizing: border-box;
+        border-bottom: 4px solid rgb(29, 140, 198);
+    }
 }
 
 @media(min-width:1200px) {
     .p_ul>li {
-        padding-bottom: 6px;
+        padding-bottom: 11px;
     }
 }
 
