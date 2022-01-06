@@ -263,14 +263,20 @@ html {
 
 /* 导航栏角标 */
 
+<<<<<<< HEAD
 
 /* @media(max-width:1000px) {
     .nav_active {
+=======
+@media(max-width:1000px) {
+    .nav_active::after {
+>>>>>>> 0daff70e78dc527cb4e5177f3a9613bc4e1b0232
         opacity: 0;
     }
 }
 
 @media (min-width:1200px) {
+<<<<<<< HEAD
     .nav_active {
         opacity: 1 !important;
     }
@@ -278,6 +284,14 @@ html {
 
 
 /* @media(min-width:1200px) {
+=======
+    .nav_active::after {
+        opacity: 1 !important;
+    }
+}
+
+@media(min-width:1200px) {
+>>>>>>> 0daff70e78dc527cb4e5177f3a9613bc4e1b0232
     .active::after {
         content: "";
         display: block;
@@ -288,6 +302,7 @@ html {
         background-color: rgb(29, 140, 198);
         opacity: 0;
     }
+<<<<<<< HEAD
 } */
 
 @media(min-width:1200px) {
@@ -295,11 +310,17 @@ html {
         box-sizing: border-box;
         border-bottom: 4px solid rgb(29, 140, 198);
     }
+=======
+>>>>>>> 0daff70e78dc527cb4e5177f3a9613bc4e1b0232
 }
 
 @media(min-width:1200px) {
     .p_ul>li {
+<<<<<<< HEAD
         padding-bottom: 11px;
+=======
+        padding-bottom: 6px;
+>>>>>>> 0daff70e78dc527cb4e5177f3a9613bc4e1b0232
     }
 }
 
