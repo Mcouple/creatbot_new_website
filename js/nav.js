@@ -3,16 +3,19 @@ $(document).ready(function() {
         divs = $("div[id='nav_bar']");
     for (var i = 0; i < lis.length; i++) {
         (function(j) {
-            $(lis[j]).mouseenter(function() {
-                $(divs[j]).slideDown(100)
+            $(lis[j]).mouseenter(function(e) {
+                e.preventDefault();
+                $(divs[j]).stop(true).slideDown(150)
                 $(lis[j]).addClass("nav_active")
-                $(lis[j]).mouseleave(function() {
-                    $(divs[j]).slideUp(100)
+
+
+                $(lis[j]).mouseleave(function(e) {
+                    e.preventDefault();
+                    $(divs[j]).stop(true).slideUp(150)
                     $(lis[j]).removeClass("nav_active")
                 })
             })
         })(i)
-
     }
 
     //导航栏加背景颜色

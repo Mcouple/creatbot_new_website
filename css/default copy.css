@@ -412,8 +412,8 @@ html {
     margin-top: 10px;
 }
 
-.video_t_ul>li {
-    border-bottom: 1px solid rgb(101, 101, 101);
+.video_t_li {
+    border-bottom: 2px solid rgb(101, 101, 101);
     margin: 0 20px;
     width: 230px;
     height: 45px;
@@ -454,8 +454,11 @@ html {
     transition: all 1s ease;
 }
 
-
-/* .video_main_left:not(.video_main_li:nth-of-type(1)) {
+.video_main_left {
     transform: scale(0.1);
     transition: all 2s ease;
-} */
+}
+
+.video_t_li {
+    border-bottom: 2px solid;
+}

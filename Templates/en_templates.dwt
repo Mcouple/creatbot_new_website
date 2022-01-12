@@ -1,7 +1,5 @@
 <!doctype html>
 <html lang="en">
-<!-- #BeginTemplate "/Templates/en_templates.dwt" -->
-<!-- DW6 -->
 
 <head>
     <title>CreatBot</title>
@@ -13,7 +11,7 @@
     <title>3D打印机厂家价格-工业级3D打印机多少钱一台-大尺寸高温3D打印机-PEEK3D打印机</title>
     <meta name="keywords" content="3d打印机,3D打印机价格,3d打印机多少钱一台,PEEK3D打印机,工业级3d打印机,高温3d打印机,3D打印机厂家,大尺寸3D打印机">
     <meta name="description" content="3D打印机首选科瑞特CreatBot，CreatBot科瑞特是3D打印行业的全球领导者, 为专业人士和教育工作者提供更广泛的服务。有关详细信息, 请访问 CreatBot.com。">
-    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="../css/default.css">
 </head>
 
 <body>
@@ -21,7 +19,7 @@
         <nav class="navbar navbar-expand-xl navbar-dark pl-xl-3 ml-xl-3">
             <div class="ml-lg-4 mt-xl-n2">
                 <a class="navbar-brand " href="#">
-                    <img class="logo" src="images/logo.svg" alt="Bootstrap" width="110" height="40">
+                    <img class="logo" src="../images/logo.svg" alt="Bootstrap" width="110" height="40">
                 </a>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +27,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul id="nav" class="navbar-nav mr-auto p_ul">
-                    <li id="li_main" class="nav-item px-xl-3 ml-xl-3 active">
+                    <li id="li_main" class="nav-item ml-xl-3 active">
                         <a class="nav-link mt-md-auto" href="#">3D Printer</a>
                         <div id="nav_bar" class="flod_container dropdown-menu text-left" aria-labelledby="navbarDropdown1">
 
@@ -38,11 +36,11 @@
                                     <h3 class="nav_img_h3 mx-3 pb-3">Large size series</h3>
                                     <ul class="d-flex my-4 pt-2">
                                         <li>
-                                            <a href=""><img src="images/nav_img/F1000.png" alt=""></a>
+                                            <a href=""><img src="../images/nav_img/F1000.png" alt=""></a>
                                             <p class="text-center mt-3">F1000</p>
                                         </li>
                                         <li>
-                                            <a href=""><img src="images/nav_img/D600.png" alt=""></a>
+                                            <a href=""><img src="../images/nav_img/D600.png" alt=""></a>
                                             <p class="text-center mt-3">D600/Pro</p>
                                         </li>
                                     </ul>
@@ -52,7 +50,7 @@
                                     <h3 class="nav_img_h3 pb-3 mx-3">High temperature series</h3>
                                     <ul class="d-flex my-4 pt-2">
                                         <li>
-                                            <a href=""><img src="images/nav_img/PEEK-300.png" alt=""></a>
+                                            <a href=""><img src="../images/nav_img/PEEK-300.png" alt=""></a>
                                             <p class="text-center mt-3">PEEK-300</p>
                                         </li>
                                     </ul>
@@ -62,15 +60,15 @@
                                     <h3 class="nav_img_h3 pb-3 mx-3">Professional desktop series</h3>
                                     <ul class="d-flex my-4 pt-2">
                                         <li>
-                                            <a href=""><img src="images/nav_img/F430.png" alt=""></a>
+                                            <a href=""><img src="../images/nav_img/F430.png" alt=""></a>
                                             <p class="text-center mt-3">F430</p>
                                         </li>
                                         <li>
-                                            <a href=""><img src="images/nav_img/F43%20plus0.png" alt=""></a>
+                                            <a href=""><img src="../images/nav_img/F43 plus0.png" alt=""></a>
                                             <p class="text-center mt-3">F430 Plus</p>
                                         </li>
                                         <li>
-                                            <a href=""><img src="images/nav_img/F160.png" alt=""></a>
+                                            <a href=""><img src="../images/nav_img/F160.png" alt=""></a>
                                             <p class="text-center mt-3">F160</p>
                                         </li>
                                     </ul>
@@ -80,7 +78,7 @@
                                     <h3 class="nav_img_h3 pb-3 mx-3">Classic D series</h3>
                                     <ul class="d-flex my-4 pt-2">
                                         <li>
-                                            <a href=""><img src="images/nav_img/dx.png" alt=""></a>
+                                            <a href=""><img src="../images/nav_img/dx.png" alt=""></a>
                                             <p class="text-center mt-3">D series</p>
                                         </li>
 
@@ -92,20 +90,20 @@
 
                         </div>
                     </li>
-                    <li id="li_main" class="nav-item active px-xl-3">
-                        <a class="nav-link" href="en/software.html">Software</a>
+                    <li id="li_main" class="nav-item active ml-xl-3">
+                        <a class="nav-link" href="../en/software.html">Software</a>
                         <div id="nav_bar" class="flod_container dropdown-menu text-center" style="height:300px ; overflow:hidden;">
                             <div class="my-4" style="position: absolute;left: 22%;">
-                                <a href=""><img style="width:200px;height: 150px;" src="images/nav_img/software.jpg" alt=""></a>
+                                <a href=""><img style="width:200px;height: 150px;" src="../images/nav_img/software.jpg" alt=""></a>
                                 <p>Software</p>
                             </div>
                             <div class="mt-n2 float-right">
-                                <img style="height: 400px;" src="images/nav_img/software-1.jpg" alt="">
+                                <img style="height: 400px;" src="../images/nav_img/software-1.jpg" alt="">
                             </div>
                         </div>
                     </li>
 
-                    <li id="li_main" class="nav-item active px-xl-3">
+                    <li id="li_main" class="nav-item active ml-xl-3">
                         <a class="nav-link" href="#">Filament</a>
                         <div id="nav_bar" class="flod_container dropdown-menu text-center filament">
 
@@ -142,7 +140,7 @@
                             </div>
 
                             <div class="nav_filament_right float-right">
-                                <a href="#"><img class="filament_img" src="images/filaments/1.jpg" alt=""></a>
+                                <a href="#"><img class="filament_img" src="../images/filaments/1.jpg" alt=""></a>
                             </div>
 
                             <div class="filament_N">
@@ -151,7 +149,7 @@
                         </div>
                     </li>
 
-                    <li id="li_main" class="nav-item active px-xl-3">
+                    <li id="li_main" class="nav-item active ml-xl-3">
                         <a class="nav-link" href="#">PEEK 3D printing</a>
                         <div id="nav_bar" class="flod_container dropdown-menu text-center">
                             <a class="dropdown-item px-3 " href="zh/creatbot-peek-300.html">PEEK-300</a>
@@ -161,7 +159,7 @@
                         </div>
                     </li>
 
-                    <li id="li_main" class="nav-item active px-xl-3">
+                    <li id="li_main" class="nav-item active ml-xl-3">
                         <a class="nav-link" href="#">Support</a>
                         <div id="nav_bar" class="flod_container dropdown-menu text-center">
                             <a class="dropdown-item px-3 " href="zh/creatbot-peek-300.html">PEEK-300</a>
@@ -170,7 +168,7 @@
                             <a class="dropdown-item px-3" href="zh/creatbot-peek-medical-case.html">医疗植入案例</a>
                         </div>
                     </li>
-                    <li id="li_main" class="nav-item active px-xl-3">
+                    <li id="li_main" class="nav-item active ml-xl-3">
                         <a class="nav-link" href="#">Gallery</a>
                         <div id="nav_bar" class="flod_container dropdown-menu text-center">
                             <a class="dropdown-item px-3 " href="zh/creatbot-peek-300.html">PEEK-300</a>
@@ -189,43 +187,6 @@
             </div>
         </nav>
     </div>
-
-
-    <!-- 视频区域 -->
-    <div class="video_container">
-        <div class="embed-responsive embed-responsive-16by9"><video muted autoplay loop style="filter: brightness(.4);" src="./video/nav.mp4"></video></div>
-    </div>
-
-    <!-- 遮罩层 -->
-    <div class="shade_top container-fluid justify-content-center position-absolute" style="top:38%">
-        <div class="row">
-            <div class="col text-center text-white">
-                <h1 class="shade_h1 mb-4 font-weight-bold">Drive innovation</h1>
-                <h2 class="mb-4 shade_h2 font-weight-normal">Double productivity · Cut costs · Streamline your workflow
-                </h2>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid position-relative" style="margin-top: 10px;height: 345px;overflow: hidden;">
-        <div class="row">
-            <img class="img-fluid position-absolute" style="filter: brightness(.5);top: -150%;" src="./images/nav_img/t.jpg" alt="">
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -249,10 +210,8 @@
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="js/nav.js"></script>
-    <script src="js/filament.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/filament.js"></script>
 </body>
-
-<!-- #EndTemplate -->
 
 </html>
