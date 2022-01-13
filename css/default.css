@@ -157,15 +157,31 @@ html {
     background-color: rgba(29, 140, 198, 0);
 }
 
-.video_container {
-    width: 100vw;
-    height: 50rem;
+.video_container,
+.video_container_s {
+    width: 100%;
+}
+
+.video_container_s {
+    height: 90vh;
     overflow: hidden;
+}
+
+@media(min-width:1350px) {
+    .video_nav_main {
+        width: 100%;
+    }
+}
+
+@media(max-width:600px) {
+    .video_container_s {
+        height: 60vh;
+    }
 }
 
 @media (min-width:1200px) {
     .shade_h1 {
-        font-size: 65px !important;
+        font-size: 60px !important;
     }
     ;
     .shade_h2 {
@@ -211,7 +227,7 @@ html {
 
 @media (max-width:570px) {
     .shade_top {
-        top: 12% !important;
+        top: 22% !important;
     }
 }
 
@@ -371,6 +387,78 @@ html {
 .icon_a:hover {
     background-color: white;
     color: black;
+}
+
+.shade_bottom>a {
+    display: inline-block;
+    width: 250px;
+    height: 40px;
+    padding: 0px 15px;
+    line-height: 35px;
+    box-sizing: border-box;
+}
+
+.shade_bottom>a:nth-child(1) {
+    box-sizing: border-box;
+    border: 2px solid rgb(29, 140, 198);
+    background-color: rgba(29, 140, 198, 1);
+    color: white;
+    margin-right: 10px;
+}
+
+.shade_bottom>a:nth-child(1):hover {
+    color: rgb(29, 140, 198) !important;
+    background-color: rgba(29, 140, 198, 0);
+}
+
+.shade_bottom>a:nth-child(2) {
+    box-sizing: border-box;
+    border: 2px solid white;
+    color: white;
+    margin-left: 10px;
+}
+
+.shade_bottom>a:nth-child(2):hover {
+    color: rgb(29, 140, 198) !important;
+    background-color: white;
+    color: black!important;
+}
+
+@media(max:650px) {
+    .shade_bottom>a:nth-child(2) {
+        margin-top: 50px;
+    }
+}
+
+.shade_bottom_s .col-12 a {
+    display: inline-block;
+    width: 100vw;
+    height: 70px;
+    padding: 15px 9px;
+    font-size: 22px;
+    box-sizing: border-box;
+    font-weight: 600;
+    text-align: center;
+}
+
+.shade_bottom_s .col-12:first-child {
+    border: 2px solid rgba(29, 140, 198, 0);
+    background-color: rgba(29, 140, 198, 1);
+    color: white!important;
+}
+
+.shade_bottom_s .col-12:first-child:hover {
+    border: 2px solid rgba(29, 140, 198, 1);
+    background-color: rgba(29, 140, 198, 0);
+    color: rgb(29, 140, 198);
+}
+
+.shade_bottom_s .col-12:last-child {
+    background-color: black;
+}
+
+.shade_bottom_s .col-12:last-child:hover {
+    background-color: rgb(77, 76, 76);
 }
 
 
