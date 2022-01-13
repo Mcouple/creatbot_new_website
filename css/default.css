@@ -74,6 +74,10 @@ html {
     fill: rgba(255, 255, 255, 0.9);
 }
 
+.nav_svg {
+    margin-top: -1rem;
+}
+
 @media (max-width:570px) {
     .navbar-brand img {
         width: 125px !important;
@@ -258,10 +262,11 @@ html {
 /* 导航折叠区 */
 
 .flod_container {
-    width: 100%;
+    width: 100vw;
     box-sizing: border-box;
     top: 95px;
     border-top: 4px solid rgb(217, 217, 217);
+    left: -35px;
 }
 
 .flod_ul>li {
@@ -300,7 +305,7 @@ html {
 
 .nav_filament_left {
     position: absolute;
-    left: 16%;
+    left: 10%;
 }
 
 .filament_img {

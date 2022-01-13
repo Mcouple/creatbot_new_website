@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     var lis = $("li[id='li_main']"),
         divs = $("div[id='nav_bar']");
     for (var i = 0; i < lis.length; i++) {
@@ -23,9 +24,19 @@ $(document).ready(function() {
         if ($(window).scrollTop() > 200) {
             $("#container_nav").addClass("f_active")
             $(".nav_t").addClass("s")
+            $("#container_nav").css("height", "60px")
+            $("#nav_navbar").css("top", "-22px")
+            $(".p_ul").children("li").css("paddingBottom", "0px")
+            $(".flod_container").css("top", "83px")
+            $(".nav_svg").css("marginTop", "0.5rem")
         } else {
             $("#container_nav").removeClass("f_active")
             $(".nav_t").removeClass("s")
+            $("#nav_navbar").css("top", "0px")
+            $(".p_ul").children("li").css("paddingBottom", "11px")
+            $(".flod_container").css("top", "95px")
+            $(".nav_svg").css("marginTop", "-1rem")
+            $("#container_nav").css("height", "100px")
         }
     });
 })
