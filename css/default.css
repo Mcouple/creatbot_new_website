@@ -181,7 +181,7 @@ html {
 
 @media (min-width:1200px) {
     .shade_h1 {
-        font-size: 60px !important;
+        font-size: 55px !important;
     }
     ;
     .shade_h2 {
@@ -459,6 +459,41 @@ html {
 
 .shade_bottom_s .col-12:last-child:hover {
     background-color: rgb(77, 76, 76);
+}
+
+
+/* 中英文切换 */
+
+.nav_text_a {
+    position: relative;
+}
+
+.navbar_text_a::after {
+    content: "";
+    display: block;
+    border: 51.35em solid rgb(0 0 0 / 0%);
+    border-top: 19.5em solid;
+    position: absolute;
+    top: 45px;
+    right: 226px;
+    border-width: 5px;
+}
+
+.nav_bar_change {
+    position: absolute;
+    right: 15.5rem;
+    background-color: rgb(255 255 255);
+    top: 4rem;
+    width: 50px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    visibility: hidden;
+}
+
+.nav_bar_change a:hover {
+    font-weight: 500;
+    color: black;
 }
 
 

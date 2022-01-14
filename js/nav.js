@@ -39,4 +39,18 @@ $(document).ready(function() {
             $("#container_nav").css("height", "100px")
         }
     });
+
+    let num = 0;
+    $(".navbar_text_a").click(function(e) {
+        e.preventDefault();
+        if (num == 0) {
+            $(".nav_bar_change").css("visibility", "visible");
+            ++num;
+            return
+        }
+        if (num == 1) {
+            $(".nav_bar_change").css("visibility", "hidden");
+            num = 0
+        }
+    });
 })
