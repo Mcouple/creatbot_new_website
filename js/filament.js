@@ -29,7 +29,6 @@ $(document).ready(function() {
             $(item[i]).mouseenter(function(e) {
                 e.preventDefault();
                 $(".filament_img").attr("src", arr[i])
-                $item[i]
             });
         }
     }

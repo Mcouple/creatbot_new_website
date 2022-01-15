@@ -21,14 +21,14 @@ $(document).ready(function() {
 
     //导航栏加背景颜色
     $(window).scroll(function() {
-        if ($(window).scrollTop() > 200) {
+        if ($(window).scrollTop() > 20) {
             $("#container_nav").addClass("f_active")
             $(".nav_t").addClass("s")
             $("#container_nav").css("height", "60px")
             $("#nav_navbar").css("top", "-22px")
             $(".p_ul").children("li").css("paddingBottom", "0px")
             $(".flod_container").css("top", "83px")
-            $(".nav_svg").css("marginTop", "0.5rem")
+            $(".nav_svg").css("marginTop", "0.1rem")
         } else {
             $("#container_nav").removeClass("f_active")
             $(".nav_t").removeClass("s")
