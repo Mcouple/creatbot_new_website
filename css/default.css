@@ -293,7 +293,7 @@ html {
 }
 
 .f_active {
-    background-color: rgb(0 0 0 / 70%);
+    background-color: rgb(0 0 0 / 90%);
 }
 
 
@@ -401,6 +401,14 @@ html {
     box-sizing: border-box;
 }
 
+.trans_s:hover {
+    transform: scale(1.1);
+}
+
+.trans_s {
+    transition: all 1s linear;
+}
+
 .shade_bottom>a:nth-child(1) {
     box-sizing: border-box;
     border: 2px solid rgb(29, 140, 198);
@@ -464,6 +472,12 @@ html {
     background-color: rgb(77, 76, 76);
 }
 
+.line_active {
+    color: rgb(29 140 198) !important;
+    font-weight: bold;
+    border: 2px solid rgb(29 140 198) !important;
+}
+
 
 /* 中英文切换 */
 
@@ -513,23 +527,77 @@ html {
     margin-top: 20px;
 }
 
-.software_video {
-    position: absolute;
-    width: 100%;
-    top: -25%;
+@media(min-width:1200px) {
+    .software_video {
+        position: absolute;
+        top: -25%;
+    }
+}
+
+@media(max-width:1200px) {
+    .software_video {
+        position: absolute;
+        top: -20%;
+    }
+}
+
+@media(max-width:900px) {
+    .software_video {
+        position: absolute;
+        top: -15%;
+    }
+}
+
+@media(max-width:750px) {
+    .software_video {
+        position: absolute;
+        top: -5%;
+    }
+}
+
+@media(max-width:500px) {
+    .software_video {
+        position: absolute;
+        top: 0;
+    }
 }
 
 .video_svg_white,
 .video_svg_black {
     position: absolute;
     left: calc(50% - 40px);
-    top: calc(50% - 40px);
     cursor: pointer;
 }
 
+@media(min-width:1200px) {
+    .video_svg_white,
+    .video_svg_black {
+        top: calc(50% - 40px);
+    }
+}
+
+@media(max-width:1200px) {
+    .video_svg_white,
+    .video_svg_black {
+        top: calc(30% - 40px);
+    }
+}
+
+@media(max-width:900px) {
+    .video_svg_white,
+    .video_svg_black {
+        top: calc(25% - 40px);
+    }
+}
+
+@media(max-width:750px) {
+    .video_svg_white,
+    .video_svg_black {
+        top: calc(20% - 40px);
+    }
+}
+
 .video_svg_white:hover {
-    /* background-color: white;
-    border-radius: 50%; */
     opacity: 0;
 }
 
@@ -539,13 +607,6 @@ html {
 .soft_img_fluid {
     position: relative;
 }
-
-
-/* @media (min-width:1200px) {
-    .soft_img_fluid {
-        left: -10%;
-    }
-} */
 
 @media(max-width:1200px) {
     .soft_img_fluid {
@@ -630,4 +691,42 @@ html {
 .border_bottom {
     border-top: 1px solid rgb(204, 204, 204)!important;
     margin-top: 66px;
+}
+
+.filament_font li {
+    background-color: rgb(0 0 0 / 0%);
+    border: 2px solid;
+    color: rgb(255, 255, 255);
+    width: 125px;
+    height: 40px;
+    text-align: center;
+    line-height: 32px;
+    margin-top: 10px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.filament_font li:hover a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.filament_font li:hover {
+    background-color: black;
+}
+
+.filament_hr hr {
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(218, 214, 214);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.filament_font a {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+
+.cursor {
+    cursor: pointer;
 }
