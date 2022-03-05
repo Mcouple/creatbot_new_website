@@ -32,4 +32,47 @@ $(document).ready(function() {
             });
         }
     }
+    //导航材料页跳转变量1
+    let filamentsOne = $(".filament_li_one");
+    let filamentsLenOne = filamentsOne.length
+    for (let i = 0; i < filamentsLenOne; i++) {
+        $(filamentsOne[i]).click(function() {
+            localStorage.setItem("index", i)
+            localStorage.setItem("dom", "filament_li_one")
+        })
+    }
+
+    //导航材料页跳转变量2
+    let filamentsTwo = $(".filament_li_two");
+    let filamentsLenTwo = filamentsTwo.length
+
+    for (let i = 0; i < filamentsLenTwo; i++) {
+        $(filamentsTwo[i]).click(function() {
+            localStorage.setItem("index", i)
+            localStorage.setItem("dom", "filament_li_two")
+        })
+    }
+
+    //导航材料页跳转变量3
+    let filamentsThree = $(".filament_li_three");
+    let filamentsLenThree = filamentsThree.length
+
+    for (let i = 0; i < filamentsLenThree; i++) {
+        $(filamentsThree[i]).click(function() {
+            localStorage.setItem("index", i)
+            localStorage.setItem("dom", "filament_li_three")
+        })
+    }
+
+    //导航材料页跳转变量4
+    let filamentsFour = $(".filament_li_four");
+    let filamentsLenFour = filamentsFour.length
+
+    for (let i = 0; i < filamentsLenFour; i++) {
+        $(filamentsFour[i]).click(function() {
+            localStorage.setItem("index", i)
+            localStorage.setItem("dom", "filament_li_four")
+        })
+    }
+
 })

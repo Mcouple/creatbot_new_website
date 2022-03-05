@@ -322,13 +322,74 @@ html {
     white-space: nowrap;
 }
 
+@media(min-width:1500px) {
+    .nav_filament_left {
+        left: 10%;
+    }
+}
+
 .nav_filament_left {
     position: absolute;
-    left: 10%;
 }
 
 .filament_img {
     width: 82%!important;
+}
+
+@media(max-width:1500px) {
+    .filament_img {
+        width: 82%!important;
+    }
+}
+
+@media(min-width:1500px) {
+    .nav_filament_margin {
+        margin-left: 3rem;
+    }
+}
+
+@media(min-width:1500px) {
+    .nav_main_contaienr {
+        margin-left: 80px;
+    }
+}
+
+@media(min-width:1500px) {
+    .printer-margin-x {
+        margin: 0 10px;
+    }
+}
+
+.nav_main_text:nth-child(1) {
+    margin-left: 0px;
+}
+
+.nav_main_text {
+    margin-left: 100px;
+}
+
+@media(max-width:1500px) {
+    .nav_main_text {
+        margin-left: 20px;
+    }
+}
+
+@media(max-width:1500px) {
+    .software-img {
+        width: 60%;
+    }
+}
+
+.software-icon {
+    position: absolute;
+    left: 22%;
+    top: 12%;
+}
+
+@media(max-width:1500px) {
+    .software-icon {
+        left: 15%;
+    }
 }
 
 .filament_N {
@@ -635,7 +696,7 @@ html {
 }
 
 .video_t_ul {
-    margin-top: 10px;
+    margin-top: 50px;
 }
 
 .video_t_ul>li {
@@ -643,9 +704,16 @@ html {
     margin: 0 20px;
     width: 230px;
     height: 45px;
-    padding-left: 40px;
-    padding-right: 20px;
+    text-align: center;
     cursor: pointer;
+}
+
+.video_t_ul_one>li {
+    width: 200px;
+}
+
+.video_t_ul_two>li {
+    width: 180px;
 }
 
 .video_t {
@@ -712,7 +780,7 @@ html {
 }
 
 .filament_font li:hover {
-    background-color: black;
+    background-color: rgb(29, 140, 198);
 }
 
 .filament_hr hr {
@@ -729,4 +797,70 @@ html {
 
 .cursor {
     cursor: pointer;
+}
+
+
+/* 小于1200px nav */
+
+.navbar-phone {
+    width: 0;
+    height: 100vh;
+    background-color: rgb(2, 6, 7);
+    position: fixed;
+    right: 0;
+    z-index: 99999;
+    overflow: hidden;
+    transition: 300ms;
+}
+
+.navbar-phone .container-buttom li a {
+    color: white;
+}
+
+.navbar-phone .container-buttom li {
+    padding: 5px 0;
+    border-bottom: 1px solid rgb(28, 31, 32);
+    height: 50px;
+    height: auto;
+    line-height: 37px;
+}
+
+.navbar-phone .container-top {
+    position: relative;
+    padding: 0;
+}
+
+.navbar-phone .container-top-left {
+    border-bottom: 1px solid white;
+    height: 60px;
+    padding: 0;
+    width: 100%;
+}
+
+.navbar-phone .container-top .container-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.navbar-phone .container-buttom .navbar-phone-text .navbar-phone-filament p {
+    color: rgb(163, 165, 165);
+    font-size: 17px;
+    border-bottom: 1px solid rgb(28, 31, 32);
+}
+
+.navbar-phone .container-buttom .navbar-phone-text {
+    display: none;
+}
+
+.navbar-phone-filament .filament-main-text {
+    height: 0;
+    overflow: hidden;
+    border: none;
+    color: rgb(163, 165, 165);
+}
+
+.navbar-phone-text p {
+    border-bottom: 1px solid rgb(28, 31, 32);
 }

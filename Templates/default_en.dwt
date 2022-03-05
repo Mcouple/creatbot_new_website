@@ -28,7 +28,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse align-items-baseline" id="navbarText">
+            <div class="collapse navbar-collapse align-items-baseline d-none d-xl-block" id="navbarText">
                 <ul id="nav" class="navbar-nav mr-auto p_ul">
                     <li id="li_main" class="nav-item px-xl-3 ml-xl-3 active">
                         <a class="nav-link mt-md-auto" href="#">3D Printer</a>
@@ -112,60 +112,69 @@
 
                     <li id="li_main" class="nav-item active px-xl-3">
                         <a class="nav-link" href="../en/filament.html">Filament</a>
-                        <div id="nav_bar" class="flod_container dropdown-menu text-center filament py-0 border-0">
-                          <div  style="border-top: 4px solid rgb(217, 217, 217);width: 62%;">
-                          <div class="nav_filament_left d-flex pt-4">
-                                <div class=" mx-4 px-2 text-left">
-                                    <h3 class="nav_filament_h3 pb-3">Standard</h3>
-                                    <ul class="d-flex flex-column my-3">
-                                        <li class="filament_li"><a href="#">PLA</a></li>
-                                        <li class="filament_li"><a href="#">PLA-CF</a></li>
-                                        <li class="filament_li"><a href="#">PETG</a></li>
-                                        <li class="filament_li"><a href="#">TPU 95A</a></li>
-                                        <li class="filament_li"><a href="#">PC</a></li>
-                                        <li class="filament_li"><a href="#">WAX</a></li>
-                                    </ul>
-                                </div>
+                          <div id="nav_bar" class="flod_container dropdown-menu text-center filament py-0 border-0">
+                            <div style="border-top: 4px solid rgb(217, 217, 217);width: 62%;">
+                                <div class="nav_filament_left d-flex pt-4">
+                                    <div class=" mx-4 px-2 text-left">
+                                        <h3 class="nav_filament_h3 pb-3">Standard</h3>
+                                        <ul class="d-flex flex-column my-3">
+                                            <li class="filament_li filament_li_one"><a href="../en/filament.html#filament1">PLA</a></li>
+                                            <li class="filament_li filament_li_one"><a href="../en/filament.html#filament1">PLA-CF</a></li>
+                                            <li class="filament_li filament_li_one"><a href="../en/filament.html#filament1">PETG</a></li>
+                                            <li class="filament_li filament_li_one"><a href="../en/filament.html#filament1">TPU 95A</a>
+                                            </li>
+                                            <li class="filament_li filament_li_one"><a href="../en/filament.html#filament1">PC</a></li>
+                                            <li class="filament_li filament_li_one"><a href="../en/filament.html#filament1">WAX</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class=" mx-4 px-2  text-left">
+                                        <h3 class="nav_filament_h3 pb-3">Engineering grade</h3>
+                                        <ul class="d-flex flex-column my-3">
+                                            <li class="filament_li filament_li_two"><a href="../en/filament.html#filament2">OBC(PP-PE)</a>
+                                            </li>
+                                            <li class="filament_li filament_li_two"><a href="../en/filament.html#filament2">ABS</a></li>
+                                            <li class="filament_li filament_li_two"><a href="../en/filament.html#filament2">ASA</a></li>
+                                            <li class="filament_li filament_li_two"><a href="../en/filament.html#filament2">PVDF</a></li>
+                                            <li class="filament_li filament_li_two"><a href="../en/filament.html#filament2">UltraPA</a>
+                                            </li>
+                                            <li class="filament_li filament_li_two"><a href="../en/filament.html#filament2">UltraPA-CF</a>
+                                            </li>
+                                            <li class="filament_li filament_li_two"><a href="../en/filament.html#filament2">UltraPA-GF</a>
+                                            </li>
+                                        </ul>
+                                    </div>
 
-                                <div class=" mx-4 px-2  text-left">
-                                    <h3 class="nav_filament_h3 pb-3">Engineering grade</h3>
-                                    <ul class="d-flex flex-column my-3">
-                                        <li class="filament_li"><a href="#">OBC(PP-PE)</a></li>
-                                        <li class="filament_li"><a href="#">ABS</a></li>
-                                        <li class="filament_li"><a href="#">ASA</a></li>
-                                        <li class="filament_li"><a href="#">PVDF</a></li>
-                                        <li class="filament_li"><a href="#">UltraPA</a></li>
-                                        <li class="filament_li"><a href="#">UltraPA-CF</a></li>
-                                        <li class="filament_li"><a href="#">UltraPA-GF</a></li>
-                                    </ul>
-                                </div>
+                                    <div class=" mx-4 px-2  text-left">
+                                        <h3 class="nav_filament_h3 pb-3">High performance grade</h3>
+                                        <ul class="d-flex flex-column my-3">
+                                            <li class="filament_li filament_li_three"><a href="../en/filament.html#filament3">PEEK</a></li>
+                                            <li class="filament_li filament_li_three"><a href="../en/filament.html#filament3">PEEK-CF</a>
+                                            </li>
+                                            <li class="filament_li filament_li_three"><a href="../en/filament.html#filament3">PEEK-GF</a>
+                                            </li>
+                                            <li class="filament_li filament_li_three"><a href="../en/filament.html#filament3">PEI 1010</a>
+                                            </li>
+                                            <li class="filament_li filament_li_three"><a href="../en/filament.html#filament3">PEI 9085</a>
+                                            </li>
+                                        </ul>
+                                    </div>
 
-                                <div class=" mx-4 px-2  text-left">
-                                    <h3 class="nav_filament_h3 pb-3">High performance grade</h3>
-                                    <ul class="d-flex flex-column my-3">
-                                        <li class="filament_li"><a href="#">PEEK</a></li>
-                                        <li class="filament_li"><a href="#">PEEK-CF</a></li>
-                                        <li class="filament_li"><a href="#">PEEK-GF</a></li>
-                                        <li class="filament_li"><a href="#">PEI 1010</a></li>
-                                        <li class="filament_li"><a href="#">PEI 9085</a></li>
-                                    </ul>
-                                </div>
+                                    <div class=" mx-4 px-2  text-left">
+                                        <h3 class="nav_filament_h3 pb-3">Support material</h3>
+                                        <ul class="d-flex flex-column my-3">
+                                            <li class="filament_li filament_li_four"><a href="../en/filament.html#filament4">PVA</a></li>
+                                            <li class="filament_li filament_li_four"><a href="../en/filament.html#filament4">Quick remove
+                                                    S-Blue</a></li>
+                                            <li class="filament_li filament_li_four"><a href="../en/filament.html#filament4">Quick remove
+                                                    S-Purple</a></li>
+                                        </ul>
+                                    </div>
 
-                                <div class=" mx-4 px-2  text-left">
-                                    <h3 class="nav_filament_h3 pb-3">Support material</h3>
-                                    <ul class="d-flex flex-column my-3">
-                                        <li class="filament_li"><a href="#">PVA</a></li>
-                                        <li class="filament_li"><a href="#">Quick remove S-Blue</a></li>
-                                        <li class="filament_li"><a href="#">Quick remove S-Purple</a></li>
-                                    </ul>
                                 </div>
-
                             </div>
-                          </div>
                             <div class="nav_filament_right float-right filament_size">
                                 <a href="#"><img class="filament_img" src="../images/filaments/PLA.png" alt=""></a>
                             </div>
-
                         </div>
                     </li>
 
@@ -251,6 +260,104 @@
         </nav>
 
     </div>
+  
+<!-- 手机版nav导航 -->
+<div class="navbar-phone">
+    <div class="row main-container ml-4">
+        <div class="col-12 container-top pl-3 pr-3" style="height: 60px;">
+            <div class="col-11 container-top-left"></div>
+            <div class="container-close mr-5 pt-3">
+                <svg width="38" height="38" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="none" stroke="#fff" stroke-width="1.06" d="M16,16 L4,4"></path>
+                    <path fill="none" stroke="#fff" stroke-width="1.06" d="M16,4 L4,16"></path>
+                </svg>
+            </div>
+
+        </div>
+        <div class="col-12 container-buttom pr-5">
+            <ul>
+                <li class="navbar-phone-main"><a href="#">3D Printer</a>
+                    <div class="navbar-phone-text m-4">
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                    </div>
+                </li>
+                <li class="navbar-phone-main"><a href="#">Software</a>
+                    <div class="navbar-phone-text m-4">
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                    </div>
+                </li>
+                <li class="navbar-phone-main"><a href="#">Filament</a>
+                    <div class="navbar-phone-text m-4">
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                    </div>
+                </li>
+                <li class="navbar-phone-main"><a href="#">PEEK 3D printing</a>
+                    <div class="navbar-phone-text m-4">
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                    </div>
+                </li>
+                <li class="navbar-phone-main"><a href="#">Support</a>
+                    <div class="navbar-phone-text m-4">
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                    </div>
+                </li>
+                <li class="navbar-phone-main"><a href="#">Gallery</a>
+                    <div class="navbar-phone-text m-4">
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                    </div>
+                </li>
+                <li class="navbar-phone-main"><a href="#">stomer Feedback</a>
+                </li>
+                <li class="navbar-phone-main"><a href="#">中文</a>
+                </li>
+                <li class="navbar-phone-main"><a href="#">Get A Quote</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
   <!-- TemplateBeginEditable name="a" -->
   <!-- TemplateEndEditable -->
 <!--
@@ -262,8 +369,6 @@
   <script src="../js/popper.min.js"></script>
   <script src="../js/bootstrap-4.4.1.js"></script>
   <script src="../js/nav.js"></script>
-  <script src="../js/filament.js"></script>
-  <script src="../js/software.js"></script>
   <!-- TemplateBeginEditable name="EditRegion4" -->
   <!-- TemplateEndEditable -->
   

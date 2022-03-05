@@ -1,6 +1,16 @@
 $(document).ready(function() {
+    //软件页面视频轮播
+    let filaments = $(".filament_li");
+    let filamentsLen = filaments.length
+    console.log(filamentsLen)
+
+    for (let i = 0; i < filamentsLen; i++) {
+        $(filaments[i]).click(function() {
+            $($(".video_t_ul>li")[i]).click()
+        })
+    }
     let len = $(".transX").length,
-        key = 100;
+        key = 99.5;
     for (let i = 0; i < len; i++) {
         $($(".video_t_ul>li")[i]).click(function(e) {
             e.preventDefault();
@@ -10,8 +20,7 @@ $(document).ready(function() {
             key += "vw"
             $($(".transX")).css("transform", "translate(" + key + ",0px)")
             $($(".video_main_left")[i]).css("transform", "scale(1.0)")
-            key = 100
-                // $($(".video_main_left:not(.video_main_left:nth-child(i)")).css("transform", "scale(0.1)")
+            key = 99.5
         });
     }
 })
