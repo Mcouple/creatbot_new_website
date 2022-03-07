@@ -354,6 +354,12 @@ html {
     }
 }
 
+@media(max-width:1500px) {
+    .nav_main_contaienr {
+        margin-left: 0px !important;
+    }
+}
+
 @media(min-width:1500px) {
     .printer-margin-x {
         margin: 0 10px;
@@ -370,13 +376,14 @@ html {
 
 @media(max-width:1500px) {
     .nav_main_text {
-        margin-left: 20px;
+        margin-left: 0px !important;
     }
 }
 
 @media(max-width:1500px) {
     .software-img {
         width: 60%;
+        transform: rotateY(46deg)
     }
 }
 
