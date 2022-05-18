@@ -4,9 +4,7 @@ $(document).ready(function(e) {
         if ($(window).width() > 1200) {
             $(".navbar-phone").css("width", "0");
         }
-
     })
-
     var lis = $("li[id='li_main']"),
         divs = $("div[id='nav_bar']");
     for (var i = 0; i < lis.length; i++) {
@@ -37,7 +35,6 @@ $(document).ready(function(e) {
             } else if ($(window).width() < 1200) {
                 $("#nav_navbar").css("top", "-5px")
             }
-
             $(".p_ul").children("li").css("paddingBottom", "0px")
             $(".flod_container").css("top", "83px")
             $(".nav_svg").css("marginTop", "0.1rem")
@@ -75,7 +72,6 @@ $(document).ready(function(e) {
             $(".navbar-phone").css("width", "90vw");
         }
     });
-
 
     let navlen = $(".navbar-phone-main").length
     let navs = $(".navbar-phone-main");

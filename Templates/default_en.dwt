@@ -40,11 +40,11 @@
                                     <h3 class="nav_img_h3 mx-3 pb-3">Large size series</h3>
                                     <ul class="d-flex my-4 pt-2">
                                         <li>
-                                            <a href=""><img src="../images/nav_img/F1000.png" alt=""></a>
+                                            <a href="../en/F1000.html"><img src="../images/nav_img/F1000.png" alt=""></a>
                                             <p class="text-center mt-3">F1000</p>
                                         </li>
                                         <li>
-                                            <a href=""><img src="../images/nav_img/D600.png" alt=""></a>
+                                            <a href="../en/D600.html"><img src="../images/nav_img/D600.png" alt=""></a>
                                             <p class="text-center mt-3">D600/Pro</p>
                                         </li>
                                     </ul>
@@ -276,7 +276,19 @@
         </div>
         <div class="col-12 container-buttom pr-5">
             <ul>
-                <li class="navbar-phone-main"><a href="#">3D Printer</a>
+                <li class="navbar-phone-main"><a href="../index.html">3D Printer</a>
+                    <div class="navbar-phone-text m-4">
+                        <p>F1000</p>
+                        <p>D600/Pro</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                        <p>F1000</p>
+                    </div>
+                </li>
+                <li class="navbar-phone-main"><a href="../en/software.html">Software</a>
                     <div class="navbar-phone-text m-4">
                         <p>F1000</p>
                         <p>F1000</p>
@@ -288,19 +300,7 @@
                         <p>F1000</p>
                     </div>
                 </li>
-                <li class="navbar-phone-main"><a href="#">Software</a>
-                    <div class="navbar-phone-text m-4">
-                        <p>F1000</p>
-                        <p>F1000</p>
-                        <p>F1000</p>
-                        <p>F1000</p>
-                        <p>F1000</p>
-                        <p>F1000</p>
-                        <p>F1000</p>
-                        <p>F1000</p>
-                    </div>
-                </li>
-                <li class="navbar-phone-main"><a href="#">Filament</a>
+                <li class="navbar-phone-main"><a href="../en/filament.html">Filament</a>
                     <div class="navbar-phone-text m-4">
                         <p>F1000</p>
                         <p>F1000</p>
@@ -369,6 +369,7 @@
   <script src="../js/popper.min.js"></script>
   <script src="../js/bootstrap-4.4.1.js"></script>
   <script src="../js/nav.js"></script>
+  <script src="../js/filament.js"></script>
   <!-- TemplateBeginEditable name="EditRegion4" -->
   <!-- TemplateEndEditable -->
   
