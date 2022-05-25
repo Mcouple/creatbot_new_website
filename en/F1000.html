@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/default.css">
     <title>CreatBot</title>
     <!-- InstanceBeginEditable name="doctitle" -->
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <!-- InstanceEndEditable -->
     <!-- InstanceBeginEditable name="head" -->
@@ -24,6 +24,11 @@
         
         .main-ul li {
             list-style: disc !important;
+        }
+        
+        .swiper-slide-thumb-active {
+            border: 2px solid #1D8CC6;
+            border-radius: 10px;
         }
     </style>
     <!-- InstanceEndEditable -->
@@ -40,13 +45,12 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse align-items-baseline d-none d-xl-block" id="navbarText">
                 <ul id="nav" class="navbar-nav mr-auto p_ul">
                     <li id="li_main" class="nav-item px-xl-3 ml-xl-3 active">
                         <a class="nav-link mt-md-auto" href="#">3D Printer</a>
 
-                        <div id="nav_bar" class="flod_container dropdown-menu text-left" aria-labelledby="navbarDropdown1">
+                        <div id="nav_bar" class="flod_container dropdown-menu text-left" aria-labelledby="navbarDropdown1" style="displ-ay: block;">
 
                             <div class="nav_main_contaienr d-flex pt-4" style="margin-left: 80px;">
                                 <div class="nav_main_text mx-4">
@@ -374,7 +378,7 @@
     <!-- InstanceBeginEditable name="a" -->
     <div class="container-fluid F1000_firstSection_bg">
         <div class="row pt-xl-5 pl-5">
-            <div class="col-md-6">
+            <div class="col-md-6 pt-3">
                 <img class="img-fluid" src="../images/F1000/F1000.png" alt="">
             </div>
             <div class="col-lg-5 pt-lg-5">
@@ -411,7 +415,7 @@
         </div>
     </div>
 
-    <div class="container-fluid position-relative" style="background: url(../images/F1000/bg3.png);height: 39vw;background-size: cover;">
+    <div class="container-fluid position-erelative" style="background: url(../images/F1000/bg3.png);height: 39vw;background-size: cover;">
         <div class="col-12">
             <div class="row justify-content-center align-items-center">
                 <div class="col-1" style="padding: 2em;">
@@ -428,11 +432,25 @@
 
             </div>
         </div>
-        <div class="col-4 position-absolute" style="right: 9em;bottom: 7em;">
-            <div class="embed-responsive embed-responsive-16by9 shadow-s ml-xl-3 vs-1">
-                <iframe src="https://www.youtube.com/embed/8noBiy0hEvA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+        <div class="row">
+            <div class="col-12 mt-5 pt-5 d-flex justify-content-center align-items-center">
+                <div class="col-2"></div>
+                <div class="col-3 pb-5" style="line-height: 1.6rem;">
+                    <div>Faurecia is a global advanced automotive system engineering and equipment supplier. They use the CreatBot 3D printer F1000 model to design and develop automotive seat molds, and are widely used in Audi, VW, NISSAN and GM motors. The
+                        molds in the video is their typical 3D printing product produced with F1000 3D printer. The Bowl and lid are required withstand 100MPa, we choose Nylon-carbon fiber materials for the production with 50% infill. Finally the prints
+                        performance are excllet and passed their strict testing!
+                    </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-4">
+                    <div class="embed-responsive embed-responsive-16by9 shadow-s ml-xl-3">
+                        <iframe src="https://www.youtube.com/embed/8noBiy0hEvA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+                    </div>
+                </div>
             </div>
+
         </div>
+
     </div>
 
     <div class="container-fluid mt-2 position-relative" style="height:460px; 
@@ -451,11 +469,23 @@
                 </div>
                 <div class="container mt-5 pt-3">
                     <div class="row justify-content-around">
-                        <div class="col-1"><img class="img-fluid" src="../images/F1000/icon4.png" alt=""></div>
-                        <div class="col-1"><img class="img-fluid" src="../images/F1000/icon5.png" alt=""></div>
-                        <div class="col-1"><img class="img-fluid" src="../images/F1000/icon6.png" alt=""></div>
-                        <div class="col-1"><img class="img-fluid" src="../images/F1000/icon7.png" alt=""></div>
-                        <div class="col-1"><img class="img-fluid" src="../images/F1000/icon8.png" alt=""></div>
+                        <div class="col-1"><img class="img-fluid" src="../images/F1000/icon4.png" alt="">
+                            <p class="text-white ml-n3 mt-1" style="font-size:10px;white-space: nowrap;">Design Prototyoe
+                            </p>
+                        </div>
+                        <div class="col-1"><img class="img-fluid p-1" src="../images/F1000/icon5.png" alt="">
+                            <p class="text-white ml-n3 mt-1" style="font-size:10px;white-space: nowrap;">Functional Prototyoe
+                            </p>
+                        </div>
+                        <div class="col-1"><img class="img-fluid p-1" src="../images/F1000/icon8.png" alt="">
+                            <p class="text-white mt-1" style="font-size:10px;white-space: nowrap;">End-Use Parts</p>
+                        </div>
+                        <div class="col-1"><img class="img-fluid p-1" src="../images/F1000/icon6.png" alt="">
+                            <p class="text-white mt-1" style="font-size:10px;white-space: nowrap;">Spare Parts</p>
+                        </div>
+                        <div class="col-1"><img class="img-fluid p-1" src="../images/F1000/icon7.png" alt="">
+                            <p class="text-white mt-1" style="font-size:10px;white-space: nowrap;">Forms&Molds</p>
+                        </div>
                     </div>
                 </div>
 
@@ -463,42 +493,7 @@
         </div>
     </div>
 
-    <div class="container-fluid pb-5">
-        <div class="row">
-            <div class="col-1"></div>
-            <div class="col-6 d-flex justify-content-center align-items-end flex-column pt-5">
-                <div class="w-100 text-center mb-3">
-                    <h3>Auto-rising Dual Extruders 420 ℃</h3>
-                </div>
-                <p>F1000 is embedded with new smart auto-rising dual-extruder kit hotend temperature up to 420 ℃, The hotend <br> can be replaced to different size one fastly. it is able to print not only huge PLA +water solubility materials PVA<br> for
-                    prototype with fastest speed, but also ABS, PC, Nylon, Carbon Fiber, Flexible and more high performance <br> material for direct application. The dual-hotend is easy to maintain and affordable to replace.</p>
-
-                <div class="container mt-3">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-2"></div>
-                        <div class="col-1">
-                            <img class="img-fluid" src="../images/F1000/icon9.png" alt="">
-                        </div>
-                        <div class="col-1"></div>
-                        <div class="col-1">
-                            <img class="img-fluid" src="../images/F1000/icon10.png" alt="">
-                        </div>
-                        <div class="col-1"></div>
-                        <div class="col-1">
-                            <img class="img-fluid" src="../images/F1000/icon11.png" alt="">
-                        </div>
-                        <div class="col-3"></div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-md-2 ml-5 d-flex align-items-center">
-                <img class="img-fluid" src="../images/F1000/F1000-header.png" alt="">
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid pb-5 text-white mb-5" style="background-color: #1D8CC6;">
+    <div class="container-fluid pb-5 text-white" style="background-color: #1D8CC6;">
         <div class="row">
             <div class="col-1"></div>
             <div class="col-6 d-flex justify-content-center align-items-end flex-column pt-5">
@@ -512,14 +507,20 @@
                         <div class="col-2"></div>
                         <div class="col-1">
                             <img class="img-fluid" src="../images/F1000/icon9-1.png" alt="">
+                            <p class="mt-2 ml-n3" style="font-size: 10px;white-space:nowrap;">Large BuildSize
+                            </p>
                         </div>
                         <div class="col-1"></div>
                         <div class="col-1">
                             <img class="img-fluid" src="../images/F1000/icon10-1.png" alt="">
+                            <p class="mt-2 ml-n3" style="font-size: 10px;white-space:nowrap;">Large BuildSize
+                            </p>
                         </div>
                         <div class="col-1"></div>
                         <div class="col-1">
                             <img class="img-fluid" src="../images/F1000/icon11-1.png" alt="">
+                            <p class="mt-2 ml-n3" style="font-size: 10px;white-space:nowrap;">Large BuildSize
+                            </p>
                         </div>
                         <div class="col-3"></div>
                     </div>
@@ -537,50 +538,73 @@
         </div>
     </div>
 
-    <div class="container-fluid my-5 float-left py-5" style="background-color: #f2f2f2d9;">
-        <div class="row pb-5">
+    <!-- cards -->
+    <div class="container-fluid mt-5 py-5">
+        <div class="row pb-5 mt-3">
             <div class="col-12">
-                <h2 class="text-center">F1000 is embedded with new smart</h2>
-                <p class="text-center mt-4">F1000 is has over 30 built-in sensors working in real-time to guarantee seamless operation in high-tech
-                    <br> manufacturing and product development projects.has over 30 built-in sensors working in real-time to guarante
+                <h2 class="text-center pb-3">F1000 is embedded with new smart</h2>
+                <p class="text-center mt-4 pb-2">F1000 is has over 30 built-in sensors working in real-time to guarantee seamless operation in high-tech manufacturing and <br> product development projects.has over 30 built-in sensors working in real-time to guarante
                 </p>
             </div>
-            <div class="col-12 d-flex justify-content-center mt-4">
-                <div class="col-lg-2 mx-lg-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../images/F1000/card1.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="col-5 p-0">
+                <img style="position: absolute;top: -200px;" src="../images/F1000/cardbg.png" alt="">
+            </div>
+            <div class="col-7 pt-3">
+                <div class="col-12 d-flex justify-content-center mt-4 px-5">
+                    <div class="col-lg-4 p-0">
+                        <div class="card rounded" style="width: 300px; background: rgba(0,0,0,0)">
+                            <img src="../images/D600/D600 case11.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">The printer will automatically memorize the current position and save print data. Lower the platform and withdraw filament when power off suddenly.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-2 mx-lg-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../images/F1000/card2.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="col-lg-4 p-0">
+                        <div class="card rounded" style="width: 300px;">
+                            <img src="../images/D600/D600 case12.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">The printer will automatically memorize the current position and save print data. Lower the platform and withdraw filament when power off suddenly.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-2 mx-lg-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../images/F1000/card3.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="col-lg-4 p-0">
+                        <div class="card rounded" style="width: 300px;">
+                            <img src="../images/D600/D600 case13.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">The printer will automatically memorize the current position and save print data. Lower the platform and withdraw filament when power off suddenly.
+                                </p>
+                            </div>
                         </div>
                     </div>
+
                 </div>
-                <div class="col-lg-2 mx-lg-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../images/F1000/card4.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="col-12 d-flex justify-content-center mt-4 px-5">
+                    <div class="col-lg-4 p-0">
+                        <div class="card" style="width: 300px;">
+                            <img src="../images/D600/D600 case14.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">The printer will automatically memorize the current position and save print data. Lower the platform and withdraw filament when power off suddenly.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 p-0">
+                        <div class="card" style="width: 300px;">
+                            <img src="../images/D600/D600 case15.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">The printer will automatically memorize the current position and save print data. Lower the platform and withdraw filament when power off suddenly.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
+
 
     <div class="container-fluid my-5 pt-5 float-left ">
         <div class="row py-3">
@@ -636,11 +660,411 @@
         </div>
     </div>
 
-
-    <div class="container" style="height: 1000px;clear: both;">
-
+    <div class="container-fluid mb-5" style="background: url(../images/F1000/bg6.png);background-size: 100% 100%;clear: both;">
+        <div class="row text-white" style="background-color: rgba(0,0,0,0.5);height:730px">
+            <div class="col-12 d-flex justify-content-center align-items-center">
+                <h4 class="mb-n5">Affordable And Reliable Large 3D printer</h4>
+            </div>
+            <div class="col-12 d-lg-flex justify-content-center">
+                <div class="col-md-5">CreatBot F1000 was created to make industrial 3d printing of large-scale objects and prototype as easy as possible. It is an industrial 3d printer that responds to market demand and is embedded with a new smart dual extruder kit, an enclosed
+                    heated chamber, automatic leveling system and camera control for big, impressive, prints. Camera control technology allow customers to control printing process with an APP, which can get best printing quality with shortest time without
+                    failure. With a fast-heating platform and hot chamber this high-resolution large-print workhorse produces incredible results with high-quality materials. </div>
+                <div class="col-md-4">CreatBot F1000 sets a new standard in additive manufacturing and extends the material capabilities of large-scale 3d printers, it brings the possible to greatly reduce cost and time for more companies.CreatBot F1000 will be your best choice
+                    with no doubt, if you are looking for an industrial large scale 3d printer for prototype and engineering-grade materials.The most important, AFFORDABLE for every company!</div>
+            </div>
+        </div>
     </div>
+
+
+    <!-- 图片放大镜 -->
+    <div class="container-fluid swiper-container swiper-container-thumbs my-5 pt-5 overflow-hidden" id="thumbs">
+        <h4 class="text-center mb-5">Printing in single and dual-extrusion modes</h4>
+        <div class="row swiper-wrappers swiper-wrapper justify-content-center m-0" style="cursor:pointer;">
+            <div style="width: 161px;height:116px;background-color: rgb(241,242,244);" class="col-1 p-0 mx-4 d-flex justify-content-center align-items-center rounded swiper-slide swiper-slide-active swiper-slide-thumb-active">
+                <img style="background-color: rgb(241,242,244);" class="img-fluid" src="../images/F1000/small-case01.png" alt="">
+            </div>
+            <div style="width: 161px;height:116px;background-color: rgb(241,242,244);" class="d-flex justify-content-center align-items-center col-1 p-0 mx-4 rounded swiper-slide"><img class="img-fluid" src="../images/F1000/small-case02.png" alt="">
+            </div>
+            <div style="width: 161px;height:116px;background-color: rgb(241,242,244);" class="d-flex justify-content-center align-items-center col-1 p-0 mx-4 rounded swiper-slide"><img class="img-fluid" src="../images/F1000/small-case03.png" alt="">
+            </div>
+            <div style="width: 161px;height:116px;background-color: rgb(241,242,244);" class="d-flex justify-content-center align-items-center col-1 p-0 mx-4 rounded swiper-slide"><img class="img-fluid" src="../images/F1000/small-case04.png" alt="">
+            </div>
+            <div style="width: 161px;height:116px;background-color: rgb(241,242,244);" class="d-flex justify-content-center align-items-center col-1 p-0 mx-4 rounded swiper-slide"><img class="img-fluid" src="../images/F1000/small-case05.png" alt="">
+            </div>
+            <div style="width: 161px;height:116px;background-color: rgb(241,242,244);" class="d-flex justify-content-center align-items-center col-1 p-0 mx-4 rounded swiper-slide"><img class="img-fluid" src="../images/F1000/small-case06.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid overflow-hidden">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 m-0 swiper">
+                <div class="swiper-wrapper  overflow--hidden">
+                    <div class="swiper-slide">
+                        <img class="img-fluid rounded magnifier1" src="../images/F1000/F1000-case01.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="img-fluid rounded magnifier2" src="../images/F1000/F1000-case02.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="img-fluid rounded magnifier3" src="../images/F1000/F1000-case03.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="img-fluid rounded magnifier4" src="../images/F1000/F1000-case04.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="img-fluid rounded magnifier5" src="../images/F1000/F1000-case05.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="img-fluid rounded magnifier6" src="../images/F1000/F1000-case06.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 技术参数 -->
+    <div class="container-fluid mt-5" id="tech-Specs">
+        <div class="row py-3 d-flex align-items-center">
+            <div class="col-12">
+                <h3 class="text-center">Technical Specs</h3>
+            </div>
+        </div>
+        <div class="row py-3 rounded">
+            <div class="col-9 d-flex m-auto">
+                <div class="col-sm-6 table-responsive">
+                    <table class="table-bordered mb-3 table-hover " width="100%">
+                        <tbody class="text-center border">
+                            <tr>
+                                <td class="h4 bg-light py-2" colspan="2">Printing</td>
+                            </tr>
+                            <tr>
+                                <td>Print Technology</td>
+                                <td>Fused Deposition Modeling</td>
+                            </tr>
+                            <tr>
+                                <td>Build Volume</td>
+                                <td>Single Extrusion: 1000*1000*1000 mm <br>&nbsp; Dual Extrusion:&nbsp;&nbsp;940*1000*1000 mm
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Number of Nozzles</td>
+                                <td>Auto-rising dual extruders</td>
+                            </tr>
+                            <tr>
+                                <td>Layer Resolution</td>
+                                <td>0.05 mm</td>
+                            </tr>
+                            <tr>
+                                <td>Filament Diameter</td>
+                                <td>1.75 mm</td>
+                            </tr>
+                            <tr>
+                                <td>Filament Compatibility</td>
+                                <td>ABS,PLA,Carbon Fiber,PETG,Nylon,PC,etc.</td>
+                            </tr>
+                            <tr>
+                                <td>Nozzle Diameter</td>
+                                <td>1.0 mm（0.4~1.5 mm）</td>
+                            </tr>
+                            <tr>
+                                <td>Print File Type</td>
+                                <td>STL, OBJ, AMF, Gcode</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table-bordered mb-3 table-hover" width="100%">
+                        <tbody class="text-center border">
+                            <tr>
+                                <td class="h4 bg-light py-2" colspan="2">Temperature</td>
+                            </tr>
+                            <tr>
+                                <td>Max. Nozzle Temperature</td>
+                                <td>420&nbsp;℃</td>
+                            </tr>
+                            <tr>
+                                <td>Max. Bed Temperature</td>
+                                <td>100&nbsp;℃</td>
+                            </tr>
+                            <tr>
+                                <td>Hot Chamber Temperature</td>
+                                <td>60 ℃</td>
+                            </tr>
+                            <tr>
+                                <td>Filament Dry Room Temperature</td>
+                                <td>45&nbsp;℃/65&nbsp;℃</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table-bordered mb-3 table-hover" width="100%">
+                        <tbody class="text-center border">
+                            <tr>
+                                <td class="h4 bg-light py-2" colspan="2">Mechanical</td>
+                            </tr>
+                            <tr>
+                                <td>Construction</td>
+                                <td>Power-Coated Steel, Aluminum Casting for Motion Components, POM</td>
+                            </tr>
+                            <tr>
+                                <td>Build Plate</td>
+                                <td>Aviation aluminum plates</td>
+                            </tr>
+                            <tr>
+                                <td>Build Plate Leveling</td>
+                                <td>Automatic</td>
+                            </tr>
+                            <tr>
+                                <td>Extruder</td>
+                                <td>Smart Dual Extruders</td>
+                            </tr>
+                            <tr>
+                                <td>Stepper Motors</td>
+                                <td>1.8°&nbsp;Step Angle with 1/16 Micro-stepping</td>
+                            </tr>
+                            <tr>
+                                <td>X Y Positioning Precision</td>
+                                <td>0.011 mm</td>
+                            </tr>
+                            <tr>
+                                <td>Z Positioning Precision</td>
+                                <td>0.0025 mm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-sm-6">
+                    <table class="table-bordered mb-3 table-hover" width="100%">
+                        <tbody class="text-center border">
+                            <tr>
+                                <td class="h4 bg-light py-2" colspan="2">Software</td>
+                            </tr>
+                            <tr>
+                                <td>Software</td>
+                                <td>CreatWare, Simplify 3D, Cura, Slic3r, etc</td>
+                            </tr>
+                            <tr>
+                                <td>Supported File Types</td>
+                                <td>STL,OBJ,Gcode,AMF</td>
+                            </tr>
+                            <tr>
+                                <td>Operating Systems</td>
+                                <td>Win7/8/10, macOS</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table-bordered mb-3 table-hover" width="100%">
+                        <tbody class="text-center border">
+                            <tr>
+                                <td class="h4 bg-light py-2" colspan="2">Special Function</td>
+                            </tr>
+                            <tr>
+                                <td>Outage Restored </td>
+                                <td>Save data when power is off</td>
+                            </tr>
+                            <tr>
+                                <td>Filament Detection</td>
+                                <td>Pause printing when filament run out</td>
+                            </tr>
+                            <tr>
+                                <td>Automatic Shut-down</td>
+                                <td>Turn off the power automatically when printing is complete </td>
+                            </tr>
+                            <tr>
+                                <td>Camera control</td>
+                                <td>Camera remote monitoring and real-time control of the printing process</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table-bordered mb-3 table-hover" width="100%">
+                        <tbody class="text-center border">
+                            <tr>
+                                <td class="h4 bg-light py-2" colspan="2">Speed</td>
+                            </tr>
+                            <tr>
+                                <td>Best Printing speed</td>
+                                <td>60 mm/s</td>
+                            </tr>
+                            <tr>
+                                <td>Max. Printing speed</td>
+                                <td>120 mm/s</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table-bordered mb-3 table-hover" width="100%">
+                        <tbody class="text-center border">
+                            <tr>
+                                <td class="h4 bg-light py-2" colspan="2">Electrical</td>
+                            </tr>
+                            <tr>
+                                <td>Power Requirements</td>
+                                <td>220~240 V, 50~60 Hz </td>
+                            </tr>
+                            <tr>
+                                <td>Screen</td>
+                                <td>9.7-inch full color touch screen independent operating system (multi-language)</td>
+                            </tr>
+                            <tr>
+                                <td>Rated Power</td>
+                                <td>Printer: 4000W, Chamber: 4500W</td>
+                            </tr>
+                            <tr>
+                                <td>Storage Media</td>
+                                <td>U Disk</td>
+                            </tr>
+                            <tr>
+                                <td>Connectivity</td>
+                                <td>USB</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table-bordered mb-3 table-hover" width="100%">
+                        <tbody class="text-center border">
+                            <tr>
+                                <td class="h4 bg-light py-2" colspan="2">Size &amp; Weight</td>
+                            </tr>
+                            <tr>
+                                <td>Product Dimensions &amp; Weight</td>
+                                <td>1740*1300*1920mm 550kg</td>
+                            </tr>
+                            <tr>
+                                <td>Packing Size &amp; Weight</td>
+                                <td>1910*1460*2190mm 640kg</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-2">
+        <div class="row py-3">
+            <div class="col-12 ">
+                <div class="row d-flex py-5">
+                    <div class="col-sm-6 p-0 d-flex align-items-center justify-content-end mr-lg-3">
+                        <div class="ml-sm-2">
+                            <h3>NEED HELP DECIDING?</h3>
+                            <p class="mb-0">We've put together a comprehensive comparison of</p>
+                            <p>our 3D printers, so you can find the one that's right for your needs.</p>
+                        </div>
+
+
+                    </div>
+                    <div class="col-sm-4 p-0 pl-5 ml-5">
+                        <img class="img-fluid" src="../images/index/PEEK3002.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
     <!-- InstanceEndEditable -->
+    <!-- 页脚 -->
+    <div class="container-fluid border-top bg-light pb-4 mt-4 footer">
+        <div class="row">
+            <div class="col-9 d-flex m-auto">
+                <div class="col-12 col-md-4 col-lg-3 pt-4">
+                    <h3>Contact Us</h3>
+                    <address>
+                        <strong>Henan Creatbot Technology Limited</strong><br>
+                        6#, Chaoya Industry Park,<br>
+                        Hanghai Road, No.13 Ave., <br>
+                        Eco-Tech Development Zone,<br>
+                        Zhengzhou City, Henan Province, China<br>
+                        <abbr title="Telephone">T:</abbr> (+86) 371 5569-1230<br>
+                        <abbr title="Mobile">M:</abbr> (+86) 155 6538 6860<br>
+                    </address>
+                    <address>
+                        <strong><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                            E-mail</strong><br>
+                        <a href="mailto:sales@creatbot.com">sales@creatbot.com</a> <br>
+                        <a href="mailto:support@creatbot.com">support@creatbot.com</a> <br>
+                        <strong><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Skype</strong><br>
+                        <ul class="list-unstyled">
+                            <li class="col-sm-6 no-padding"> <a href="skype:creatbot?chat">creatbot</a> </li>
+                        </ul>
+                    </address>
+                    <h4>Social</h4>
+                    <div class="row">
+                        <div class="col-2">
+                            <a href="https://www.facebook.com/CreatBot3dprinters/"> <img class="rounded-circle" src="../images/footer/facebook.png" alt="facebook">
+                            </a>
+                        </div>
+                        <div class="col-2 ml-2">
+                            <a href="https://www.youtube.com/channel/UCIcnmhxTqgAK0DLGjArQYMw"> <img class="rounded-circle" src="../images/footer/youtube.png" alt="youtube"> </a>
+                        </div>
+                        <div class="col-2 ml-2">
+                            <a href="https://www.linkedin.com/in/arno-wang-076bb5118"> <img class="rounded-circle" src="../images/footer/linkedin.png" alt="linkedin">
+                            </a>
+                        </div>
+                        <div class="col-2 ml-2"> <img class="rounded-circle" src="../images/footer/tweeter.png" alt="tweeter"> </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8 col-lg-6 pt-4" id="feedbackFormFootDiv"> <a id="fbTag" class="d-block text-hide">GET A QUOTE</a>
+                    <h3> Message</h3>
+                    <form class="row" role="form" id="feedbackFormFoot" action="https://www.creatbot.com/ERP/Msg.aspx" method="post">
+                        <div class="form-group col-md-6">
+                            <label for="cus_name">Name<span class="color-f60 h6">*</span></label>
+                            <input type="text" required="" class="form-control" id="cus_name" name="cus_name" placeholder="Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="cus_type">Type</label>
+                            <select class="form-control" id="cus_type" name="cus_type">
+                                <option value="Pre-sales Consultation" selected="SELECTED">Pre-sales Consultation
+                                </option>
+                                <option value="After-sales Consultation">After-sales Consultation</option>
+                                <option value="Distributor Consultation">Distributor Consultation</option>
+                                <option value="Other Consultation">Other Consultation</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="cus_email">Work Email<span class="color-f60 h6">*</span></label>
+                            <input type="email" required="" class="form-control" id="cus_email" name="cus_email" placeholder="Company/office email">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="cus_email2">Common Email</label>
+                            <input type="email" class="form-control" id="cus_email2" name="cus_email2" placeholder="Gmail, hotmail, yahoo, etc">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="cus_phone">Phone<span class="color-f60 h6">*</span></label>
+                            <input type="tel" pattern="[()+-0123456789 ]{7,30}" required="" class="form-control " id="cus_phone" name="cus_phone" placeholder="(country code)-phone No.">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="cus_contact_ways">Other Contact Ways</label>
+                            <input type="text" class="form-control" id="cus_contact_ways" name="cus_contact_ways" placeholder="Skype, WhatsApp, Facebook, Linkedin, etc">
+                        </div>
+                        <div class="form-group col-12">
+                            <label for="cus_msg">Message<span class="color-f60 h6">*</span></label>
+                            <textarea required="" rows="6" cols="100" class="form-control" id="cus_msg" name="cus_msg" placeholder="We will reply you within 12 hours, email will be the first choice. Please check your mailbox ( spam included). Thank you!"></textarea>
+                        </div>
+                        <div class="text-center col-12">
+                            <input type="hidden" id="cus_path" name="cus_path" value="https://www.creatbot.com/en/creatbot-f1000.html">
+                            <input type="hidden" id="cus_ip" name="cus_ip" value="123.14.41.14">
+                            <input type="hidden" id="cus_location" name="cus_location" value="中国北京市北京">
+                            <button type="submit" id="cus_submit" name="cus_submit" value="Ok! Send" class="btn btn-primary col-md-6">Ok! Send</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 pt-4">
+                    <h3>Quick Links</h3>
+                    <h4>CreatBot</h4>
+                    <div class="row"> <a class="col-sm-6 my-1" href="payment.html" target="_blank">Payment</a> <a class="col-sm-6 my-1" href="shipment.html">Shipment</a> <a class="col-sm-6 my-1" href="warranty.html">Warranty</a> <a class="col-sm-6 my-1" href="privacy.html">Privacy
+                            Policy</a> </div>
+                    <h4>Marketing</h4>
+                    <div class="row"> <a class="col-12 my-1" href="distributor.html">Agent and Distributor Policy</a> <a class="col-12 my-1" href="mailto:marketing@creatbot.com">marketing@creatbot.com</a> </div>
+                    <h4>Miscellaneous</h4>
+                    <div class="row"> <a class="col-sm-6 my-1" href="download.html">Download</a> <a class="col-sm-6 my-1" href="gallery.html">Gallery</a>
+                    </div>
+                    <h4>Company</h4>
+                    <div class="row"> <a class="col-sm-6 my-1" href="about-us.html">About Us</a> <a class="col-sm-6 my-1" href="join-us.html">Join Us</a>
+                        <!--<a class="col-sm-6 my-1" href="../en/news.html">News</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!--
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -652,6 +1076,8 @@
     <script src="../js/nav.js"></script>
     <script src="../js/filament.js"></script>
     <!-- InstanceBeginEditable name="EditRegion4" -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/magnifier.js"></script>
     <script>
         $(document).ready(function() {
             $(".logo").attr("src", "../images/logo_black.svg")
@@ -660,6 +1086,74 @@
             } else {
                 $("#container_nav").css("backgroundColor", "rgba(228,228,228,0.88)")
             }
+        })
+    </script>
+    <script>
+        var mySwiper = new Swiper('.swiper', {
+            initialSlide: 0,
+            direction: 'horizontal',
+            grabCursor: true,
+            setWrapperSize: true,
+            thumbs: {
+                swiper: {
+                    el: '#thumbs',
+                    spaceBetween: 3,
+                    slidesPerView: 10,
+                    watchSlidesVisibility: true,
+                },
+            }
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $(".magnifier1").magnifier({
+                "round": false,
+                "width": 200,
+                "height": 200,
+                "scale": 1.1,
+                "border": "1px solid white",
+                "round": "2px"
+            });
+            $(".magnifier2").magnifier({
+                "round": false,
+                "width": 200,
+                "height": 200,
+                "scale": 1.1,
+                "border": "1px solid white",
+                "round": "2px",
+            });
+            $(".magnifier3").magnifier({
+                "round": false,
+                "width": 200,
+                "height": 200,
+                "scale": 1.1,
+                "border": "1px solid white",
+                "round": "2px",
+            });
+            $(".magnifier4").magnifier({
+                "round": false,
+                "width": 200,
+                "height": 200,
+                "scale": 1.1,
+                "border": "1px solid white",
+                "round": "2px",
+            });
+            $(".magnifier5").magnifier({
+                "round": false,
+                "width": 200,
+                "height": 200,
+                "scale": 1.1,
+                "border": "1px solid white",
+                "round": "2px"
+            });
+            $(".magnifier6").magnifier({
+                "round": false,
+                "width": 200,
+                "height": 200,
+                "scale": 1.1,
+                "border": "1px solid white",
+                "round": "2px"
+            });
         })
     </script>
     <!-- InstanceEndEditable -->

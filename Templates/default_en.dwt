@@ -360,6 +360,111 @@
 </div>
   <!-- TemplateBeginEditable name="a" -->
   <!-- TemplateEndEditable -->
+    <!-- 页脚 -->
+    <div class="container-fluid border-top bg-light pb-4 mt-4 footer">
+        <div class="row">
+            <div class="col-9 d-flex m-auto">
+                <div class="col-12 col-md-4 col-lg-3 pt-4">
+                    <h3>Contact Us</h3>
+                    <address>
+                        <strong>Henan Creatbot Technology Limited</strong><br>
+                        6#, Chaoya Industry Park,<br>
+                        Hanghai Road, No.13 Ave., <br>
+                        Eco-Tech Development Zone,<br>
+                        Zhengzhou City, Henan Province, China<br>
+                        <abbr title="Telephone">T:</abbr> (+86) 371 5569-1230<br>
+                        <abbr title="Mobile">M:</abbr> (+86) 155 6538 6860<br>
+                    </address>
+                    <address>
+                        <strong><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                            E-mail</strong><br>
+                        <a href="mailto:sales@creatbot.com">sales@creatbot.com</a> <br>
+                        <a href="mailto:support@creatbot.com">support@creatbot.com</a> <br>
+                        <strong><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Skype</strong><br>
+                        <ul class="list-unstyled">
+                            <li class="col-sm-6 no-padding"> <a href="skype:creatbot?chat">creatbot</a> </li>
+                        </ul>
+                    </address>
+                    <h4>Social</h4>
+                    <div class="row">
+                        <div class="col-3">
+                            <a href="https://www.facebook.com/CreatBot3dprinters/"> <img class="rounded-circle" src="../images/icons/social/facebook.png" alt="facebook">
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="https://www.youtube.com/channel/UCIcnmhxTqgAK0DLGjArQYMw"> <img class="rounded-circle" src="../images/icons/social/youtube.png" alt="youtube"> </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="https://www.linkedin.com/in/arno-wang-076bb5118"> <img class="rounded-circle" src="../images/icons/social/linkedin.png" alt="linkedin">
+                            </a>
+                        </div>
+                        <div class="col-3"> <img class="rounded-circle" src="../images/icons/social/tweeter.png" alt="tweeter"> </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8 col-lg-6 pt-4" id="feedbackFormFootDiv"> <a id="fbTag" class="d-block text-hide">GET A QUOTE</a>
+                    <h3> Message</h3>
+                    <form class="row" role="form" id="feedbackFormFoot" action="https://www.creatbot.com/ERP/Msg.aspx" method="post">
+                        <div class="form-group col-md-6">
+                            <label for="cus_name">Name<span class="color-f60 h6">*</span></label>
+                            <input type="text" required="" class="form-control" id="cus_name" name="cus_name" placeholder="Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="cus_type">Type</label>
+                            <select class="form-control" id="cus_type" name="cus_type">
+                                <option value="Pre-sales Consultation" selected="SELECTED">Pre-sales Consultation
+                                </option>
+                                <option value="After-sales Consultation">After-sales Consultation</option>
+                                <option value="Distributor Consultation">Distributor Consultation</option>
+                                <option value="Other Consultation">Other Consultation</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="cus_email">Work Email<span class="color-f60 h6">*</span></label>
+                            <input type="email" required="" class="form-control" id="cus_email" name="cus_email" placeholder="Company/office email">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="cus_email2">Common Email</label>
+                            <input type="email" class="form-control" id="cus_email2" name="cus_email2" placeholder="Gmail, hotmail, yahoo, etc">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="cus_phone">Phone<span class="color-f60 h6">*</span></label>
+                            <input type="tel" pattern="[()+-0123456789 ]{7,30}" required="" class="form-control " id="cus_phone" name="cus_phone" placeholder="(country code)-phone No.">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="cus_contact_ways">Other Contact Ways</label>
+                            <input type="text" class="form-control" id="cus_contact_ways" name="cus_contact_ways" placeholder="Skype, WhatsApp, Facebook, Linkedin, etc">
+                        </div>
+                        <div class="form-group col-12">
+                            <label for="cus_msg">Message<span class="color-f60 h6">*</span></label>
+                            <textarea required="" rows="6" cols="100" class="form-control" id="cus_msg" name="cus_msg" placeholder="We will reply you within 12 hours, email will be the first choice. Please check your mailbox ( spam included). Thank you!"></textarea>
+                        </div>
+                        <div class="text-center col-12">
+                            <input type="hidden" id="cus_path" name="cus_path" value="https://www.creatbot.com/en/creatbot-f1000.html">
+                            <input type="hidden" id="cus_ip" name="cus_ip" value="123.14.41.14">
+                            <input type="hidden" id="cus_location" name="cus_location" value="中国北京市北京">
+                            <button type="submit" id="cus_submit" name="cus_submit" value="Ok! Send" class="btn btn-primary col-md-6">Ok! Send</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 pt-4">
+                    <h3>Quick Links</h3>
+                    <h4>CreatBot</h4>
+                    <div class="row"> <a class="col-sm-6 my-1" href="payment.html" target="_blank">Payment</a> <a class="col-sm-6 my-1" href="shipment.html">Shipment</a> <a class="col-sm-6 my-1" href="warranty.html">Warranty</a> <a class="col-sm-6 my-1" href="privacy.html">Privacy
+                            Policy</a> </div>
+                    <h4>Marketing</h4>
+                    <div class="row"> <a class="col-12 my-1" href="distributor.html">Agent and Distributor Policy</a> <a class="col-12 my-1" href="mailto:marketing@creatbot.com">marketing@creatbot.com</a> </div>
+                    <h4>Miscellaneous</h4>
+                    <div class="row"> <a class="col-sm-6 my-1" href="download.html">Download</a> <a class="col-sm-6 my-1" href="gallery.html">Gallery</a>
+                    </div>
+                    <h4>Company</h4>
+                    <div class="row"> <a class="col-sm-6 my-1" href="about-us.html">About Us</a> <a class="col-sm-6 my-1" href="join-us.html">Join Us</a>
+                        <!--<a class="col-sm-6 my-1" href="../en/news.html">News</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 <!--
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
