@@ -73,20 +73,24 @@ $(document).ready(function(e) {
         }
     });
 
+    //手机版导航
     let navlen = $(".navbar-phone-main").length
     let navs = $(".navbar-phone-main");
     let texts = $(".navbar-phone-text")
+    let key = false
     for (let i = 0; i < navlen; i++) {
-        $(navs[i]).mouseenter(function(e) {
-            $(texts[i]).stop(true).slideDown(200)
-
-            $(navs[i]).mouseleave(function(e) {
-                e.preventDefault()
-                $(texts[i]).stop(true).slideUp(200)
-            })
-
+        $(navs[i]).click(function(e) {
+            key = !key;
+            if (!key) {
+                $(texts[i]).addClass("pactive")
+            } else {
+                $(texts[i]).removeClass("pactive")
+            }
         })
     }
+
+
+
     //材料页二级导航
     let filaments = $(".navbar-phone-filament");
     let filamentSText = $(".filament-main-text")

@@ -798,15 +798,18 @@ html {
 }
 
 .navbar-phone .container-buttom li a {
+    font-size: 17px;
     color: white;
 }
+
+
+/* p字段的内容 */
 
 .navbar-phone .container-buttom li {
     padding: 5px 0;
     border-bottom: 1px solid rgb(28, 31, 32);
-    height: 50px;
-    height: auto;
     line-height: 37px;
+    color: white;
 }
 
 .navbar-phone .container-top {
@@ -834,8 +837,19 @@ html {
     border-bottom: 1px solid rgb(28, 31, 32);
 }
 
+.navbar-phone .container-buttom .navbar-phone-text p {
+    font-size: 17px;
+}
+
 .navbar-phone .container-buttom .navbar-phone-text {
+    max-height: 0;
+    overflow: hidden;
     display: none;
+}
+
+.pactive {
+    max-height: 1000px!important;
+    display: block!important;
 }
 
 .navbar-phone-filament .filament-main-text {
