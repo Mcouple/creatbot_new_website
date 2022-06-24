@@ -1045,3 +1045,23 @@ html {
     display: inline-block;
     line-height: 1;
 }
+
+.btn-color-f60 {
+    color: #fff;
+    background-color: #f60;
+    border-color: #f60;
+}
+
+#icon a :hover {
+    box-shadow: 3px 8px 12px #888888;
+    opacity: 1;
+}
+
+.show_active {
+    box-shadow: 3px 8px 12px #888888;
+    opacity: 1 !important;
+}
+
+.icon_show {
+    opacity: 0.8;
+}

@@ -208,7 +208,6 @@
                                     <ul class="d-flex my-4 pt-2">
                                         <li>
                                             <a href=""><img src="../images/nav_img/Medical_Cases.jpg" alt=""></a>
-<!--                                            <p class="text-center mt-3">D series</p>-->
                                         </li>
 
                                     </ul>
@@ -218,8 +217,7 @@
                                     <h3 class="nav_img_h3 pb-3 mx-3">Medical Cases</h3>
                                     <ul class="d-flex my-4 pt-2">
                                         <li>
-                                            <a href=""><img src="../images/nav_img/PEEK3D_printing.jpg" alt=""></a>
-<!--                                            <p class="text-center mt-3">D series</p>-->
+                                            <a href="../en/creatbot-peek-medical-case.html"><img src="../images/nav_img/PEEK3D_printing.jpg" alt=""></a>
                                         </li>
 
                                     </ul>
@@ -278,20 +276,20 @@
                     <li class="navbar-phone-main">
                         <a href="javacript:void(0)">3D Printer</a>
                         <div class="navbar-phone-text mx-4 mt-2">
-                            <p><a href="./en/F1000.html">F1000</a> </p>
-                            <p><a href="./en/D600.html">D600/Pro</a> </p>
-                            <p><a href="./en/peek-300.html">PEEK300</a> </p>
-                            <p><a href="./en/F430.html">F430</a> </p>
+                            <p><a href="./F1000.html">F1000</a> </p>
+                            <p><a href="./D600.html">D600/Pro</a> </p>
+                            <p><a href="./peek-300.html">PEEK300</a> </p>
+                            <p><a href="./F430.html">F430</a> </p>
                             <p class="border-bottom-0">F1000</p>
                         </div>
                     </li>
-                    <li class="navbar-phone-main"><a href="#">Software</a>
+                    <li class="navbar-phone-main"><a href="../en/software.html">Software</a>
                         <div class="navbar-phone-text mx-4 mt-2">
                             <p>F1000</p>
                             <p class="border-bottom-0">F1000</p>
                         </div>
                     </li>
-                    <li class="navbar-phone-main"><a href="./en/filament.html">Filament</a>
+                    <li class="navbar-phone-main"><a href="./filament.html">Filament</a>
                         <div class="navbar-phone-text mx-4 mt-2">
                             <p>F1000</p>
                         </div>

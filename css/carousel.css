@@ -1,0 +1,78 @@
+div.wrapper > ul.container {
+  position: relative;
+  height: calc(24rem + 3vh);
+  margin: 0 auto;
+}
+div.wrapper {
+  position: relative;
+}
+div.wrapper.horizontal ul.container > li.cards_list {
+  width: calc(15rem + 1.5vw);
+}
+em.btn-direct {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  width: calc(1.9rem + 1.5vw);
+  height: calc(1.9rem + 1.5vw);
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, .7);
+  opacity: 0;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity ease 300ms;
+}
+div.wrapper:hover em.btn-direct {
+  opacity: .6;
+}
+em.btn-direct:hover {
+  opacity: .9 !important;
+}
+
+  @media(max-width:768px){
+em.btn-direct.btn-left {
+  left: 1%;
+    }
+em.btn-direct.btn-right {
+  right: 1%;
+    }
+}
+  @media(max-width:1200px){
+em.btn-direct.btn-left {
+  left: 10%;
+   }
+em.btn-direct.btn-right {
+  right: 10%;
+    }
+}
+  @media(max-width:2000px){
+em.btn-direct.btn-left {
+  left: 20%;
+   }
+em.btn-direct.btn-right {
+  right:20%;
+    }
+}
+  @media(min-width:2000px){
+em.btn-direct.btn-left {
+  left: 30%;
+   }
+em.btn-direct.btn-right {
+  right:30%;
+    }
+}
+em.btn-direct > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-top: 0.125rem solid #fff;
+  border-left: 0.125rem solid #fff;
+}
+div.wrapper.horizontal em.btn-direct > span.shift-left {
+  transform: translate(-30%, -50%) rotate(-45deg);
+}
+div.wrapper.horizontal em.btn-direct > span.shift-right {
+  transform: translate(-70%, -50%) rotate(135deg);
+}
