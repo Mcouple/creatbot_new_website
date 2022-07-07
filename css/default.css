@@ -682,7 +682,8 @@ html {
     margin-top: 50px;
 }
 
-.video_t_ul>li {
+.video_t_ul>li,
+.filament-swiper-div {
     border-bottom: 1px solid rgb(101, 101, 101);
     margin: 0 20px;
     width: 230px;
@@ -692,7 +693,8 @@ html {
 }
 
 @media(max-width:550px) {
-    .video_t_ul>li {
+    .video_t_ul>li,
+    .filament-swiper-div {
         margin: 0 4px;
     }
 }
@@ -1003,8 +1005,10 @@ html {
 }
 
 .swiper-slide-thumb-active {
-    border: 3px solid #1D8CC6;
     border-radius: 10px;
+    color: rgb(29 140 198) !important;
+    font-weight: bold;
+    border: 2px solid rgb(29 140 198) !important;
 }
 
 .footer,
@@ -1064,4 +1068,81 @@ html {
 
 .icon_show {
     opacity: 0.8;
+}
+
+
+/* peek-medical-case */
+
+@media(min-width:1200px) {
+    .py_top {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 15em 0px;
+    }
+}
+
+@media(max-width:600px) {
+    .py_top {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 5em 0px;
+    }
+}
+
+@media (min-width: 992px) {
+    .peek-300_ul {
+        line-height: 2.1;
+    }
+}
+
+@media(max-width:920px) {
+    .bg-img {
+        background-attachment: scroll!important;
+        background-size: cover!important;
+    }
+}
+
+.bg-white {
+    background-color: #F4F4F4!important;
+}
+
+.btn_blue {
+    box-sizing: border-box;
+    border: 2px solid rgb(29, 140, 198);
+    padding: 6px 22px 9px;
+    line-height: 25px;
+    background-color: rgba(29, 140, 198, 1);
+    color: white;
+}
+
+.btn_blue:hover {
+    color: rgb(29, 140, 198) !important;
+    background-color: rgba(29, 140, 198, 0);
+}
+
+/* 性能亮点可打印范围 */
+.span-property,
+.span-Highlights,
+.span-printe{
+    display: inline-block;
+    height: 5px;
+    width: 15px;
+    border-radius: 5px;
+    line-height: 5px;
+}
+.span-property{
+    background-color: #BABABA;
+}
+.span-Highlights{
+    background-color: #C21E25;
+}
+.span-printe{
+    background-color: #152046;
+}
+.filament-div-text{
+    background-color: gray;
+    text-align: center;
+    width: 146px;
+    height: 30px;
+    color: white;
+    font-weight: 600;
+    line-height: 30px;
 }

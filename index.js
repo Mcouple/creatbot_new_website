@@ -1,25 +1,18 @@
-// let http = require('http')
-// let obj = {
-//     name: "hello",
-//     age: 12
-// }
-// http.createServer((request, response) => {
-//     response.writeHead(200, {
-//         'Content-Type': 'text/plain'
-//     })
-//     response.end("obj")
-// }).listen(8888)
-// console.log('Server running at http://127.0.0.1:8888')
+function uniqueOccurrences(arr) {
+    let uniqueArr = [...new Set(arr)]
+    let countArr = []
+    for (let i = 0; i < uniqueArr.length; i++) {
+        countArr.push(arr.filter(item => {
+            return item == uniqueArr[i]
+        }).length)
+    }
+    console.log(countArr);
+    return countArr.length == new Set(countArr).size
+};
+console.log(uniqueOccurrences([1, 2, 2, 1, 1, 3])); // true
 
+function uninqueOccurrences(arr) {
+    let uniqueArr = [...new Set(arr)]
+    let countArr = []
 
-let http = require("http")
-http.createServer((request, response) => {
-    response.writeHead(200, {
-        'Content-Type': "text/plain"
-    })
-    response.end("hello world")
-}).listen(23232)
-console.log("Server running at http://127.0.0.1:23232")
-
-let http = require('http')
-http.createServer(200, )
+}
